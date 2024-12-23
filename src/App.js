@@ -1,10 +1,10 @@
 import './App.css'
 
-import SunburstChart from './components/sunburst/SunburstChart'
+import Home from './components/home/Home'
 
 const App = () => (
 	<div className="app">
-		<SunburstChart />
+		<Home />
 	</div>
 )
 

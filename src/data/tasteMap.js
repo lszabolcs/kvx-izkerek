@@ -1,6 +1,6 @@
 const tasteMap = [
 	{
-		slug: 'kvx',
+		slug: null,
 		name: 'KVX',
 		normal: { fill: '#dddbca' },
 		children: [
