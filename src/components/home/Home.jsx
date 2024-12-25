@@ -2,7 +2,7 @@ import React, {
 	useState
 } from 'react'
 
-import SunburstChart from '../../components/sunburst/SunburstChart'
+import SunburstChart from '../sunburst/SunburstChart'
 
 import tasteMap from '../../data/tasteMap'
 import coffeeList from '../../data/coffeeList'
@@ -38,11 +38,18 @@ const Home = () => {
 					onChange={onChange}/>
 				Van kapcsolódó kávé
 			</label>
-			<SunburstChart
-				data={tasteMap}
-				filteredData={tasteMapFiltered}
-				filtered={filtered}
-				onSelect={onSelect}/>
+			{filtered ? (
+				<SunburstChart
+					data={tasteMapFiltered}
+					containerName="filtered-map"
+					filteredData={tasteMapFiltered}
+					onSelect={onSelect}/>
+			) : (
+				<SunburstChart
+					data={tasteMap}
+					containerName="full-map"
+					onSelect={onSelect}/>
+			)}
 		</div>
 	)
 }
