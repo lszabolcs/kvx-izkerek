@@ -23,6 +23,7 @@ const SunburstChart = ({
 
 		const chartConfig = anychart.sunburst(dataArg, 'as-tree')
 		chartConfig.calculationMode('ordinal-from-leaves')
+		chartConfig.background().fill('transparent')
 		chartConfig.interactivity().selectionMode('none')
 		chartConfig.container(containerName)
 		chartConfig.listen('pointClick', onClick)
@@ -35,7 +36,7 @@ const SunburstChart = ({
 		<div
 			key="data-chart"
 			id={containerName}
-			className={styles.container}>
+			className={`w-full ${styles.container}`}>
 			<AnyChart instance={chartInstanceRef.current}/>
 		</div>
 	)

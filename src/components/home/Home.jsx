@@ -2,6 +2,9 @@ import React, {
 	useState
 } from 'react'
 
+import { Switch } from 'components/ui/switch'
+import { Label } from 'components/ui/label'
+
 import SunburstChart from '../sunburst/SunburstChart'
 
 import tasteMap from '../../data/tasteMap'
@@ -31,13 +34,12 @@ const Home = () => {
 	
 	return (
 		<div>
-			<label>
-				<input
-					type="checkbox"
-					checked={filtered}
-					onChange={onChange}/>
-				Van kapcsolódó kávé
-			</label>
+			 <div className="flex items-center space-x-2">
+				<Switch
+					id="filter"
+					onCheckedChange={(e) => setFiltered(e)}/>
+				<Label htmlFor="filter">Van kapcsolódó kávé</Label>
+			</div>
 			{filtered ? (
 				<SunburstChart
 					data={tasteMapFiltered}
