@@ -4,6 +4,14 @@ import React, {
 
 import { Switch } from 'components/ui/switch'
 import { Label } from 'components/ui/label'
+import {
+	Dialog,
+	DialogContent,
+	DialogDescription,
+	DialogHeader,
+	DialogTitle
+  } from "components/ui/dialog"
+  
 
 import SunburstChart from '../sunburst/SunburstChart'
 
@@ -13,16 +21,16 @@ import TasteMapFilter from '../../data/tasteMapFilter'
 
 const Home = () => {
 	const [filtered, setFiltered] = useState(false)
+	const [selectedTaste, setSelectedTaste] = useState('')
+	const [selectedCoffees, setSelectedCoffees] = useState([])
 
-	const onSelect = (selectedCoffee) => {
-		const coffees = coffeeList.filter((coffee) => coffee.notes.includes(selectedCoffee.slug))
-
-		if (coffees?.length) console.table(coffees)
+	const onSelect = (newSelectedTaste) => {
+		const coffees = coffeeList.filter((coffee) => coffee.notes.includes(newSelectedTaste.slug))
+		setSelectedTaste(newSelectedTaste)
+		setSelectedCoffees(coffees)
 	}
 
-	const onChange = (e) => {
-		setFiltered(e.target.checked)
-	}
+	const onClose = () => setSelectedCoffees([])
 
 	const notes = new Set()
 	coffeeList.forEach((coffee) => {
@@ -52,6 +60,24 @@ const Home = () => {
 					containerName="full-map"
 					onSelect={onSelect}/>
 			)}
+			<Dialog open={selectedCoffees?.length}>
+				<DialogContent
+					onClose={onClose}
+					onEscapeKeyDown={onClose}
+					onPointerDownOutside={onClose}
+					onInteractOutside={onClose}>
+					<DialogHeader>
+					<DialogTitle>Ízjegy: {selectedTaste.name}</DialogTitle>
+					<DialogDescription>
+						{selectedCoffees.map((coffee) => (
+							<div>
+								{`${coffee.name} ${coffee.roast}`}
+							</div>
+						))}
+					</DialogDescription>
+					</DialogHeader>
+				</DialogContent>
+			</Dialog>
 		</div>
 	)
 }
