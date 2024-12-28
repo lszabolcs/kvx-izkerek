@@ -1,19 +1,14 @@
 import React, {
-	useState
+	useState,
+	useRef
 } from 'react'
 
 import { Switch } from 'components/ui/switch'
 import { Label } from 'components/ui/label'
-import {
-	Dialog,
-	DialogContent,
-	DialogDescription,
-	DialogHeader,
-	DialogTitle
-  } from "components/ui/dialog"
   
 
-import SunburstChart from '../sunburst/SunburstChart'
+import SunburstChart from 'components/sunburst/SunburstChart'
+import CoffeeDialog from 'components/coffeedialog/CoffeeDialog'
 
 import tasteMap from '../../data/tasteMap'
 import coffeeList from '../../data/coffeeList'
@@ -21,16 +16,9 @@ import TasteMapFilter from '../../data/tasteMapFilter'
 
 const Home = () => {
 	const [filtered, setFiltered] = useState(false)
-	const [selectedTaste, setSelectedTaste] = useState('')
-	const [selectedCoffees, setSelectedCoffees] = useState([])
+	const dialogRef = useRef(null)
 
-	const onSelect = (newSelectedTaste) => {
-		const coffees = coffeeList.filter((coffee) => coffee.notes.includes(newSelectedTaste.slug))
-		setSelectedTaste(newSelectedTaste)
-		setSelectedCoffees(coffees)
-	}
-
-	const onClose = () => setSelectedCoffees([])
+	const onSelect = (newSelectedTaste) => dialogRef.current.update(newSelectedTaste)
 
 	const notes = new Set()
 	coffeeList.forEach((coffee) => {
@@ -52,7 +40,6 @@ const Home = () => {
 				<SunburstChart
 					data={tasteMapFiltered}
 					containerName="filtered-map"
-					filteredData={tasteMapFiltered}
 					onSelect={onSelect}/>
 			) : (
 				<SunburstChart
@@ -60,24 +47,7 @@ const Home = () => {
 					containerName="full-map"
 					onSelect={onSelect}/>
 			)}
-			<Dialog open={selectedCoffees?.length}>
-				<DialogContent
-					onClose={onClose}
-					onEscapeKeyDown={onClose}
-					onPointerDownOutside={onClose}
-					onInteractOutside={onClose}>
-					<DialogHeader>
-					<DialogTitle>Ízjegy: {selectedTaste.name}</DialogTitle>
-					<DialogDescription>
-						{selectedCoffees.map((coffee) => (
-							<div>
-								{`${coffee.name} ${coffee.roast}`}
-							</div>
-						))}
-					</DialogDescription>
-					</DialogHeader>
-				</DialogContent>
-			</Dialog>
+			<CoffeeDialog ref={dialogRef}/>
 		</div>
 	)
 }
