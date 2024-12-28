@@ -12,6 +12,13 @@ import {
 	DialogTitle
 } from 'components/ui/dialog'
 
+import {
+	Table,
+	TableBody
+} from 'components/ui/table'
+
+import CoffeeRow from 'components/coffeerow/CoffeeRow'
+
 import coffeeList from 'data/coffeeList'
 
 const CoffeeDialog = forwardRef((_, ref) => {
@@ -41,11 +48,11 @@ const CoffeeDialog = forwardRef((_, ref) => {
 				<DialogHeader>
 				<DialogTitle>Ízjegy: {selectedTaste?.name}</DialogTitle>
 				<DialogDescription>
-					{selectedCoffees.map((coffee) => (
-						<div>
-							{`${coffee.name} ${coffee.roast}`}
-						</div>
-					))}
+					<Table className="mt-5">
+						<TableBody>
+							{selectedCoffees.map((coffee) => <CoffeeRow data={coffee}/>)}
+						</TableBody>
+					</Table>
 				</DialogDescription>
 				</DialogHeader>
 			</DialogContent>
