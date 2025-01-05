@@ -7,7 +7,6 @@ import React, {
 import {
 	Dialog,
 	DialogContent,
-	DialogDescription,
 	DialogHeader,
 	DialogTitle
 } from 'components/ui/dialog'
@@ -44,17 +43,16 @@ const CoffeeDialog = forwardRef((_, ref) => {
 				onClose={onClose}
 				onEscapeKeyDown={onClose}
 				onPointerDownOutside={onClose}
-				onInteractOutside={onClose}>
+				onInteractOutside={onClose}
+				aria-describedby={undefined}>
 				<DialogHeader>
-				<DialogTitle>Ízjegy: {selectedTaste?.name}</DialogTitle>
-				<DialogDescription>
-					<Table className="mt-5">
-						<TableBody>
-							{selectedCoffees.map((coffee) => <CoffeeRow data={coffee}/>)}
-						</TableBody>
-					</Table>
-				</DialogDescription>
+					<DialogTitle>Ízjegy: {selectedTaste?.name}</DialogTitle>
 				</DialogHeader>
+				<Table>
+					<TableBody>
+						{selectedCoffees.map((coffee) => <CoffeeRow data={coffee} key={coffee.name}/>)}
+					</TableBody>
+				</Table>
 			</DialogContent>
 		</Dialog>
 	)

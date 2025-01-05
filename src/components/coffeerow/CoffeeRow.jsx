@@ -1,9 +1,13 @@
 import {
 	TableCell,
 	TableRow
-  } from 'components/ui/table'
+} from 'components/ui/table'
+import { Badge } from 'components/ui/badge'
 
 import { ExternalLink } from 'lucide-react'
+
+import tasteMap from 'data/tasteMap'
+import TasteMapFilter from 'data/tasteMapFilter'
 
 const CoffeeRow = ({
 	data = {}
@@ -13,6 +17,20 @@ const CoffeeRow = ({
 		keyword: `${data?.name} ${data?.roast}`
 })
 	const url = `https://www.avxcafe.hu/index.php?${params}`
+	const tasteMapFilter = new TasteMapFilter(tasteMap)
+
+	const renderTaste = (tasteSlug) => {
+		const taste = tasteMapFilter.getTasteBySlug(tasteSlug)
+		return (
+			<Badge
+				key={taste?.slug}
+				className="whitespace-nowrap"
+				style={{ background: taste?.normal?.fill }}>
+				{taste?.name}
+			</Badge>
+		)
+	}
+	
 
 	return (
 		<TableRow>
@@ -27,7 +45,9 @@ const CoffeeRow = ({
 				</a>
 			</TableCell>
 			<TableCell className="font-bold">{data?.roast}</TableCell>
-			<TableCell className="text-right">{data?.notes?.join(', ')}</TableCell>
+			<TableCell className="flex flex-wrap gap-2 items-start justify-end">
+				{data?.notes?.map((n) => renderTaste(n))}
+			</TableCell>
 		</TableRow>
 	)
 }

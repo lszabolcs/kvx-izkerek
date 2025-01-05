@@ -3,6 +3,16 @@ class TasteMapFilter {
 		this.data = data
 		this.notes = notes || []
 		this.filteredData = []
+		this.tasteList = {}
+
+		this.flattenBySlugRecursive(this.data)
+	}
+
+	flattenBySlugRecursive = (array) => {
+		array?.forEach((obj) => {
+			if (obj.slug) this.tasteList[obj.slug] = { ...obj }
+			if (obj.children?.length) this.flattenBySlugRecursive(obj.children)
+		})
 	}
 
 	filter = (object) => {
@@ -41,6 +51,8 @@ class TasteMapFilter {
 	}
 
 	getFilteredData = () => this.copyRecursive(this.data)
+
+	getTasteBySlug = (slug) => ({ ...this.tasteList[slug] })
 }
 
 export default TasteMapFilter

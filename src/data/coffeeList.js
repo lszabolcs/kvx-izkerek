@@ -53,7 +53,8 @@ const coffeeList = [
 	{
 		name: 'Ethiopia washed Limu',
 		roast: 'V',
-		notes: ['gyumolcsos', 'viragos', 'narancs', 'nugat']
+		notes: ['gyumolcsos', 'viragos', 'narancs'],
+		desc: 'Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi narancsos savassággal és nugátos ízzel.'
 	},
 	{
 		name: 'PNG Washed Arabica Korofeigu Grade',
