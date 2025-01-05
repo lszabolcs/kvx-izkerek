@@ -44,6 +44,7 @@ const CoffeeDialog = forwardRef((_, ref) => {
 				onEscapeKeyDown={onClose}
 				onPointerDownOutside={onClose}
 				onInteractOutside={onClose}
+				onOpenAutoFocus={(event) => event.preventDefault()}
 				aria-describedby={undefined}>
 				<DialogHeader>
 					<DialogTitle>Ízjegy: {selectedTaste?.name}</DialogTitle>

@@ -3,8 +3,14 @@ import {
 	TableRow
 } from 'components/ui/table'
 import { Badge } from 'components/ui/badge'
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from 'components/ui/tooltip'
 
-import { ExternalLink } from 'lucide-react'
+import { ExternalLink, Info } from 'lucide-react'
 
 import tasteMap from 'data/tasteMap'
 import TasteMapFilter from 'data/tasteMapFilter'
@@ -18,6 +24,19 @@ const CoffeeRow = ({
 })
 	const url = `https://www.avxcafe.hu/index.php?${params}`
 	const tasteMapFilter = new TasteMapFilter(tasteMap)
+
+	const renderDesc = (desc) => (
+		<TooltipProvider delayDuration={50}>
+			<Tooltip>
+				<TooltipTrigger>
+					<Info/>
+				</TooltipTrigger>
+				<TooltipContent defaultOpen={false}>
+					<p>{desc}</p>
+				</TooltipContent>
+			</Tooltip>
+		</TooltipProvider>
+	)
 
 	const renderTaste = (tasteSlug) => {
 		const taste = tasteMapFilter.getTasteBySlug(tasteSlug)
@@ -46,6 +65,7 @@ const CoffeeRow = ({
 			</TableCell>
 			<TableCell className="font-bold">{data?.roast}</TableCell>
 			<TableCell className="flex flex-wrap gap-2 items-start justify-end">
+				{data?.desc && renderDesc(data.desc)}
 				{data?.notes?.map((n) => renderTaste(n))}
 			</TableCell>
 		</TableRow>
