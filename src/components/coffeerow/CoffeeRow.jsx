@@ -29,7 +29,7 @@ const CoffeeRow = ({
 		<TooltipProvider delayDuration={50}>
 			<Tooltip>
 				<TooltipTrigger>
-					<Info/>
+					<Info className="mt-1 w-4 h-4"/>
 				</TooltipTrigger>
 				<TooltipContent defaultOpen={false}>
 					<p>{desc}</p>

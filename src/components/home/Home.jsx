@@ -5,8 +5,13 @@ import React, {
 
 import { Switch } from 'components/ui/switch'
 import { Label } from 'components/ui/label'
-  
 
+import {
+	Table,
+	TableBody
+} from 'components/ui/table'
+
+import CoffeeRow from 'components/coffeerow/CoffeeRow'
 import SunburstChart from 'components/sunburst/SunburstChart'
 import CoffeeDialog from 'components/coffeedialog/CoffeeDialog'
 
@@ -29,12 +34,15 @@ const Home = () => {
 	const tasteMapFiltered = tasteMapFilter.getFilteredData()
 	
 	return (
-		<div>
-			 <div className="flex items-center space-x-2">
-				<Switch
-					id="filter"
-					onCheckedChange={(e) => setFiltered(e)}/>
-				<Label htmlFor="filter">Van kapcsolódó kávé</Label>
+		<main>
+			<div className="space-y-2">
+				<h1 className="text-2xl sm:text-3xl font-bold">Kávé Ízkerék</h1>
+				<div className="flex items-center space-x-2">
+					<Switch
+						id="filter"
+						onCheckedChange={(e) => setFiltered(e)}/>
+					<Label htmlFor="filter">Van kapcsolódó kávé</Label>
+				</div>
 			</div>
 			{filtered ? (
 				<SunburstChart
@@ -48,7 +56,13 @@ const Home = () => {
 					onSelect={onSelect}/>
 			)}
 			<CoffeeDialog ref={dialogRef}/>
-		</div>
+			<h2 className="text-xl sm:text-2xl font-bold mb-2">Kávé lista</h2>
+			<Table>
+				<TableBody>
+					{coffeeList.map((coffee) => <CoffeeRow data={coffee} key={coffee.name}/>)}
+				</TableBody>
+			</Table>
+		</main>
 	)
 }
 
