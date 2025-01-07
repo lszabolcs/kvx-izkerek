@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/kvx-izkerek/static/css/main.82cc8b9d.css",
-    "main.js": "/kvx-izkerek/static/js/main.10d71205.js",
+    "main.js": "/kvx-izkerek/static/js/main.abf6420a.js",
     "static/js/453.1377d33b.chunk.js": "/kvx-izkerek/static/js/453.1377d33b.chunk.js",
     "index.html": "/kvx-izkerek/index.html",
     "main.82cc8b9d.css.map": "/kvx-izkerek/static/css/main.82cc8b9d.css.map",
-    "main.10d71205.js.map": "/kvx-izkerek/static/js/main.10d71205.js.map",
+    "main.abf6420a.js.map": "/kvx-izkerek/static/js/main.abf6420a.js.map",
     "453.1377d33b.chunk.js.map": "/kvx-izkerek/static/js/453.1377d33b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.82cc8b9d.css",
-    "static/js/main.10d71205.js"
+    "static/js/main.abf6420a.js"
   ]
 }
