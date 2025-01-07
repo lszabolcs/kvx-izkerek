@@ -47,8 +47,8 @@ const tasteMap = [
 								normal: { fill: '#9E2478' }
 							},
 							{
-								slug: 'szilva',
-								name: 'Szilva',
+								slug: 'aszalt-szilva',
+								name: 'Aszalt szilva',
 								normal: { fill: '#85558E' }
 							}
 						]
@@ -177,8 +177,8 @@ const tasteMap = [
 						normal: { fill: '#B0A017' },
 						children: [
 							{
-								slug: 'boros',
-								name: 'Boros',
+								slug: 'bor',
+								name: 'Bor',
 								normal: { fill: '#A50870' }
 							},
 							{
@@ -201,8 +201,8 @@ const tasteMap = [
 				]
 			},
 			{
-				slug: 'zold',
-				name: 'Zöld',
+				slug: 'zold-noveny',
+				name: 'Zöld növény',
 				normal: { fill: '#007E3B' },
 				children: [
 					{
@@ -216,8 +216,8 @@ const tasteMap = [
 						normal: { fill: '#6B8B39' }
 					},
 					{
-						slug: 'vegetativ',
-						name: 'Vegetatív',
+						slug: 'noveny',
+						name: 'Növény',
 						normal: { fill: '#07B152' },
 						children: [
 							{
@@ -231,28 +231,28 @@ const tasteMap = [
 								normal: { fill: '#4AB349' }
 							},
 							{
-								slug: 'friss',
-								name: 'Friss',
+								slug: 'friss-fu',
+								name: 'Friss / Fű',
 								normal: { fill: '#00AC6F' }
 							},
 							{
-								slug: 'sotetzold',
-								name: 'Sötétzöld',
+								slug: 'fott-zoldek',
+								name: 'Főtt zöldek',
 								normal: { fill: '#00603D' }
 							},
 							{
-								slug: 'vegetativ',
-								name: 'Vegetatív',
+								slug: 'leveles-zoldseg',
+								name: 'Leveles zöldség',
 								normal: { fill: '#00B26B' }
 							},
 							{
-								slug: 'szenaszeru',
-								name: 'Szénaszerű',
+								slug: 'szena',
+								name: 'Széna',
 								normal: { fill: '#9F9F23' }
 							},
 							{
-								slug: 'fuszeres',
-								name: 'Fűszeres',
+								slug: 'gyogynoveny',
+								name: 'Gyógynövény',
 								normal: { fill: '#7BC258' }
 							}
 						]
@@ -273,7 +273,7 @@ const tasteMap = [
 						slug: 'papiros-dohos',
 						name: 'Papíros / Dohos',
 						normal: { fill: '#9CBBCA' },
-						children: [
+						children: [							
 							{
 								slug: 'allott',
 								name: 'Állott',
@@ -310,15 +310,25 @@ const tasteMap = [
 								normal: { fill: '#CA8078' }
 							},
 							{
-								slug: 'allatias',
-								name: 'Állatias',
+								slug: 'allati',
+								name: 'Állati',
 								normal: { fill: '#E77C87' }
+							},
+							{
+								slug: 'fott-hus',
+								name: 'Főtt hús',
+								normal: { fill: '#CC7B6A' }
+							},
+							{
+								slug: 'fenolos',
+								name: 'Fenolos',
+								normal: { fill: '#DB646A' }
 							}
 						]
 					},
 					{
-						slug: 'kemiai',
-						name: 'Kémiai',
+						slug: 'vegyszeres',
+						name: 'Vegyszeres',
 						normal: { fill: '#63C4DA' },
 						children: [
 							{
@@ -337,13 +347,13 @@ const tasteMap = [
 								normal: { fill: '#62A8C2' }
 							},
 							{
-								slug: 'koolajos',
-								name: 'Kőolajos',
+								slug: 'petroleum',
+								name: 'Petróleum',
 								normal: { fill: '#00A9BF' }
 							},
 							{
-								slug: 'budosborz-szagu',
-								name: 'Büdösborz szagú',
+								slug: 'buzos',
+								name: 'Bűzös',
 								normal: { fill: '#5E8295' }
 							},
 							{
@@ -356,8 +366,8 @@ const tasteMap = [
 				]
 			},
 			{
-				slug: 'porkolt',
-				name: 'Pörkölt',
+				slug: 'piritott',
+				name: 'Pirított',
 				normal: { fill: '#D33928' },
 				children: [
 					{
@@ -376,13 +386,13 @@ const tasteMap = [
 						normal: { fill: '#B6804D' },
 						children: [
 							{
-								slug: 'csipos',
-								name: 'Csípős',
+								slug: 'fanyar',
+								name: 'Fanyar',
 								normal: { fill: '#AFA068' }
 							},
 							{
-								slug: 'hamus',
-								name: 'Hamus',
+								slug: 'hamu',
+								name: 'Hamu',
 								normal: { fill: '#93A792' }
 							},
 							{
@@ -391,8 +401,8 @@ const tasteMap = [
 								normal: { fill: '#A87E34' }
 							},
 							{
-								slug: 'barna-porkolt',
-								name: 'Barna, Pörkölt',
+								slug: 'sult',
+								name: 'Sült',
 								normal: { fill: '#835622' }
 							}
 						]
@@ -422,8 +432,8 @@ const tasteMap = [
 				normal: { fill: '#B81242' },
 				children: [
 					{
-						slug: 'csipos',
-						name: 'Csípős',
+						slug: 'pikans',
+						name: 'Pikáns',
 						normal: { fill: '#724764' }
 					},
 					{
@@ -461,8 +471,8 @@ const tasteMap = [
 				]
 			},
 			{
-				slug: 'diofelek',
-				name: 'Diófélék',
+				slug: 'magvak',
+				name: 'Magvak',
 				normal: { fill: '#9A7B79' },
 				children: [
 					{

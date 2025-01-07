@@ -70,7 +70,7 @@ const coffeeList = [
 	{
 		name: 'India Monsooned Malabar AA',
 		roast: 'KS',
-		notes: ['fuszeres', 'dohany']
+		notes: ['fuszerek', 'dohany']
 	},
 	{
 		name: 'Indonesia Toraja Kalossi Gr.1',
@@ -113,7 +113,7 @@ const coffeeList = [
 	{
 		name: 'Rwanda washed Sake Womens Coffee Specialty 86p',
 		roast: 'KV',
-		notes: ['fuszeres', 'citrus'],
+		notes: ['fuszerek', 'citrus'],
 		desc: 'Fűszernövények, mandarin'
 	},
 	{
