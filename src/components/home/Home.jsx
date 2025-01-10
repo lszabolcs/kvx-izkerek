@@ -16,12 +16,13 @@ import SunburstChart from 'components/sunburst/SunburstChart'
 import CoffeeDialog from 'components/coffeedialog/CoffeeDialog'
 
 import tasteMap from '../../data/tasteMap'
-import coffeeList from '../../data/coffeeList'
+import coffeeList, { sortByName } from '../../data/coffeeList'
 import TasteMapFilter from '../../data/tasteMapFilter'
 
 const Home = () => {
 	const [filtered, setFiltered] = useState(false)
 	const dialogRef = useRef(null)
+	coffeeList.sort(sortByName)
 
 	const onSelect = (newSelectedTaste) => dialogRef.current.update(newSelectedTaste)
 
