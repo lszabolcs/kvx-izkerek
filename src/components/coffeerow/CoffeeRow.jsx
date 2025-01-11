@@ -28,7 +28,7 @@ const CoffeeRow = ({
 	const renderDesc = (desc) => (
 		<TooltipProvider delayDuration={50}>
 			<Tooltip>
-				<TooltipTrigger>
+				<TooltipTrigger className="hidden sm:block">
 					<Info className="mt-1 w-4 h-4"/>
 				</TooltipTrigger>
 				<TooltipContent defaultOpen={false}>
