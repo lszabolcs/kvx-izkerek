@@ -47,6 +47,11 @@ const avxBlend = [
 		notes: ['csokolade', 'mogyoro', 'ananasz', 'eper']
 	},
 	{
+		name: 'AVX Choco & Orange Blend',
+		roast: 'KV',
+		notes: ['etcsokolade', 'narancs']
+	},
+	{
 		name: 'Bécsi Keringő Limited Edition Blend',
 		roast: 'KV',
 		notes: ['gyumolcsos'],
@@ -72,6 +77,11 @@ const brasil = [
 		notes: ['diofelek', 'kakao', 'etcsokolade']
 	},
 	{
+		name: 'Brazil Santos CO2 Koffeinmentes',
+		roast: 'KS',
+		notes: ['etcsokolade', 'kakao', 'mez']
+	},
+	{
 		name: 'Brazil natural Obata Fazenda da Lagoa Specialty 84p',
 		roast: 'KS',
 		notes: ['etcsokolade', 'diofelek']
@@ -80,6 +90,17 @@ const brasil = [
 		name: 'Brazil Carbonic Natural Koffeinmentes',
 		roast: 'KS',
 		notes: ['etcsokolade', 'kakao', 'mez']
+	},
+	{
+		name: 'Brazil Fazenda Dona Nenem Specialty 84p',
+		roast: 'KV',
+		notes: ['edes', 'savanyu'],
+		desc: 'Ez a kávé édes, telt testű, enyhe savú és nagyon jól kiegyensúlyozott.'
+	},
+	{
+		name: 'Brazil Fazenda do Lobo Mundo Novo Anaerobic Specialty 86p',
+		roast: 'KV',
+		notes: ['etcsokolade', 'diofelek']
 	},
 	{
 		name: 'Brazil Fazenda Rainha Yellow Bourbon Specialty 86p',
@@ -110,6 +131,12 @@ const columbia = [
 
 const etiopia = [
 	{
+		name: 'Ethiopia Sidamo GR1 Shantawene Bombe natural',
+		roast: 'V',
+		notes: ['gyumolcsos', 'viragos', 'oszibarack', 'fekete-tea'],
+		desc: 'Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi őszibarak, fekete tea.'
+	},
+	{
 		name: 'Ethiopia washed Limu',
 		roast: 'V',
 		notes: ['gyumolcsos', 'viragos', 'narancs'],
@@ -121,6 +148,19 @@ const etiopia = [
 		notes: ['gyumolcsos', 'viragos', 'narancs'],
 		desc: 'Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi narancsos savassággal és nugátos ízzel.'
 	}
+]
+
+const india = [
+	{
+		name: 'India Robusta Cherry AA',
+		roast: 'S',
+		notes: ['fuszerek', 'etcsokolade', 'magvak']
+	},
+	{
+		name: 'India Monsooned Malabar AA',
+		roast: 'KS',
+		notes: ['fuszerek', 'dohany']
+	},
 ]
 
 const nicaragua = [
@@ -146,22 +186,44 @@ const tanzania = [
 	},
 ]
 
+const panama = [
+	{
+		name: 'Panama El Hortigal Estate Specialty-88p',
+		roast: 'KV',
+		notes: ['gyumolcsos'],
+		desc: 'csonthéjas gyümölcsök'
+	}
+]
+
+const peru = [
+	{
+		name: 'Peru Cemcavir Geisha Finca Mariposa',
+		roast: 'V',
+		notes: ['cseresznye'],
+		desc: 'Keksz, cseresznye'
+	},
+	{
+		name: 'Peru Cemcavir Geisha Finca La Esperanza',
+		roast: 'KV',
+		notes: ['csokolade', 'cseresznye', 'aszalt-gyumolcs', 'alkohol'],
+		desc: 'csokoládé, cseresznye, szárított gyümölcsök és rum'
+	}
+]
+
 const coffeeList = [
 	...avxBlend,
 	...brasil,
 	...columbia,
 	...etiopia,
+	...india,
 	...nicaragua,
 	...tanzania,
+	...panama,
+	...peru,
 	{
 		name: 'PNG Washed Arabica Korofeigu Grade',
 		roast: 'KS',
 		notes: ['karamellizalt', 'vanilia', 'csokolade']
-	},
-	{
-		name: 'India Monsooned Malabar AA',
-		roast: 'KS',
-		notes: ['fuszerek', 'dohany']
 	},
 	{
 		name: 'Indonesia Toraja Kalossi Gr.1',
@@ -184,12 +246,6 @@ const coffeeList = [
 		name: 'Guatemala SHB EP Specialty 84p',
 		roast: 'KS',
 		notes: ['fekete-tea', 'aszalt-gyumolcs'],
-	},
-	{
-		name: 'Peru Cemcavir Geisha Finca Mariposa',
-		roast: 'V',
-		notes: ['cseresznye'],
-		desc: 'Keksz, cseresznye'
 	},
 	{
 		name: 'Rwanda washed Sake Womens Coffee Specialty 86p',
