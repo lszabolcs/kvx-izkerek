@@ -36,7 +36,7 @@ const Home = () => {
 	
 	return (
 		<main>
-			<div className="space-y-2">
+			<div className="max-w-screen-xl mx-auto space-y-2">
 				<h1 className="text-2xl sm:text-3xl font-bold">Kávé Ízkerék</h1>
 				<div className="flex items-center space-x-2">
 					<Switch
@@ -57,12 +57,14 @@ const Home = () => {
 					onSelect={onSelect}/>
 			)}
 			<CoffeeDialog ref={dialogRef}/>
-			<h2 className="text-xl sm:text-2xl font-bold mb-2">Kávé lista</h2>
-			<Table>
-				<TableBody>
-					{coffeeList.map((coffee) => <CoffeeRow data={coffee} key={coffee.name}/>)}
-				</TableBody>
-			</Table>
+			<div className="max-w-screen-xl mx-auto">
+				<h2 className="text-xl sm:text-2xl font-bold mb-2">Kávé lista</h2>
+				<Table>
+					<TableBody>
+						{coffeeList.map((coffee) => <CoffeeRow data={coffee} key={`${coffee.name}-${coffee.roast}`}/>)}
+					</TableBody>
+				</Table>
+			</div>
 		</main>
 	)
 }

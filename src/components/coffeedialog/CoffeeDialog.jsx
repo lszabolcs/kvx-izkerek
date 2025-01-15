@@ -51,7 +51,7 @@ const CoffeeDialog = forwardRef((_, ref) => {
 				</DialogHeader>
 				<Table>
 					<TableBody>
-						{selectedCoffees.map((coffee) => <CoffeeRow data={coffee} key={coffee.name}/>)}
+						{selectedCoffees.map((coffee) => <CoffeeRow data={coffee} key={`${coffee.name}-${coffee.roast}`}/>)}
 					</TableBody>
 				</Table>
 			</DialogContent>

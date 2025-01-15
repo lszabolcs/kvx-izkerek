@@ -14,7 +14,7 @@ const Footer = () => {
 	)
 
 	return (
-		<footer className="text-sm mt-10 py-4 border-t sm:flex gap-2">
+		<footer className="max-w-screen-xl mx-auto text-sm mt-10 py-4 border-t sm:flex gap-2">
 			<div className="flex-1 space-y-2">
 				<p>
 					Készítette:<br/>
