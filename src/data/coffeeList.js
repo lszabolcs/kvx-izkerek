@@ -129,6 +129,19 @@ const columbia = [
 	},
 ]
 
+const elSalvador = [
+	{
+		name: 'El Salvador Apaneca Pacamara washed Specialty 85p',
+		roast: 'KS',
+		notes: ['csokolade', 'diofelek']
+	},
+	{
+		name: 'El Salvador Los Naranjos Valley Red Bourbon natural Specialty 87p',
+		roast: 'KS',
+		notes: ['aszalt-gyumolcs', 'kakao']
+	},
+]
+
 const etiopia = [
 	{
 		name: 'Ethiopia Sidamo GR1 Shantawene Bombe natural',
@@ -214,6 +227,7 @@ const coffeeList = [
 	...avxBlend,
 	...brasil,
 	...columbia,
+	...elSalvador,
 	...etiopia,
 	...india,
 	...nicaragua,
@@ -252,11 +266,6 @@ const coffeeList = [
 		roast: 'KV',
 		notes: ['fuszerek', 'citrus'],
 		desc: 'Fűszernövények, mandarin'
-	},
-	{
-		name: 'El Salvador Los Naranjos Valley Red Bourbon natural Specialty 87p',
-		roast: 'KS',
-		notes: ['aszalt-gyumolcs', 'kakao']
 	}
 ]
 
