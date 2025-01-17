@@ -8,7 +8,8 @@ import { Label } from 'components/ui/label'
 
 import {
 	Table,
-	TableBody
+	TableBody,
+	TableHeader
 } from 'components/ui/table'
 
 import CoffeeRow from 'components/coffeerow/CoffeeRow'
@@ -60,6 +61,9 @@ const Home = () => {
 			<div className="max-w-screen-xl mx-auto">
 				<h2 className="text-xl sm:text-2xl font-bold mb-2">Kávé lista</h2>
 				<Table>
+					<TableHeader>
+						<CoffeeRow header/>
+					</TableHeader>
 					<TableBody>
 						{coffeeList.map((coffee) => <CoffeeRow data={coffee} key={`${coffee.name}-${coffee.roast}`}/>)}
 					</TableBody>

@@ -36,7 +36,7 @@ const SunburstChart = ({
 		<div
 			key="data-chart"
 			id={containerName}
-			className={`w-full ${styles.container}`}>
+			className={`w-full z-auto ${styles.container}`}>
 			<AnyChart instance={chartInstanceRef.current}/>
 		</div>
 	)

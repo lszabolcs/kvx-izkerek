@@ -1,5 +1,6 @@
 import {
 	TableCell,
+	TableHead,
 	TableRow
 } from 'components/ui/table'
 import { Badge } from 'components/ui/badge'
@@ -16,7 +17,8 @@ import tasteMap from 'data/tasteMap'
 import TasteMapFilter from 'data/tasteMapFilter'
 
 const CoffeeRow = ({
-	data = {}
+	data = {},
+	header = false
 }) => {
 	const params = new URLSearchParams({
 		route: 'product/list',
@@ -47,6 +49,16 @@ const CoffeeRow = ({
 				style={{ background: taste?.normal?.fill }}>
 				{taste?.name}
 			</Badge>
+		)
+	}
+
+	if (header) {
+		return (
+			<TableRow>
+				<TableHead>Név</TableHead>
+				<TableHead>Pörkölés</TableHead>
+				<TableHead className="text-right">Ízjegyek</TableHead>
+			</TableRow>
 		)
 	}
 	
