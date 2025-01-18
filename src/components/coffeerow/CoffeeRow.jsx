@@ -54,7 +54,7 @@ const CoffeeRow = ({
 
 	if (header) {
 		return (
-			<TableRow>
+			<TableRow className="hidden sm:table-row">
 				<TableHead>Név</TableHead>
 				<TableHead>Pörkölés</TableHead>
 				<TableHead className="text-right">Ízjegyek</TableHead>
@@ -64,8 +64,8 @@ const CoffeeRow = ({
 	
 
 	return (
-		<TableRow>
-			<TableCell>
+		<TableRow className="flex flex-wrap py-4 gap-2 sm:table-row sm:p-0">
+			<TableCell className="p-0 grow max-w-[calc(100%-2rem)] text-balance sm:p-2">
 				<a
 					className="hover:underline"
 					href={url}
@@ -75,11 +75,16 @@ const CoffeeRow = ({
 					<ExternalLink className="inline-block ml-2 w-4 h-4"/>
 				</a>
 			</TableCell>
-			<TableCell className="font-bold">{data?.roast}</TableCell>
-			<TableCell className="flex flex-wrap gap-2 items-start justify-end">
+			<TableCell className="font-bold p-0 sm:p-2">{data?.roast}</TableCell>
+			<TableCell className="w-full flex flex-wrap gap-2 items-start p-0 sm:w-auto sm:justify-end sm:p-2">
 				{data?.desc && renderDesc(data.desc)}
 				{data?.notes?.map((n) => renderTaste(n))}
 			</TableCell>
+			{data?.desc && (
+				<TableCell className="italic p-0 sm:hidden">
+					"{data.desc}"
+				</TableCell>
+			)}
 		</TableRow>
 	)
 }

@@ -25,6 +25,8 @@ const SunburstChart = ({
 		chartConfig.calculationMode('ordinal-from-leaves')
 		chartConfig.background().fill('transparent')
 		chartConfig.interactivity().selectionMode('none')
+		chartConfig.padding(0)
+		chartConfig.margin(0)
 		chartConfig.container(containerName)
 		chartConfig.listen('pointClick', onClick)
 		return chartConfig.draw()
@@ -36,7 +38,7 @@ const SunburstChart = ({
 		<div
 			key="data-chart"
 			id={containerName}
-			className={`w-full z-auto ${styles.container}`}>
+			className={`relative w-full z-auto aspect-square max-h-[calc(100dvh-4.5rem)] ${styles.container}`}>
 			<AnyChart instance={chartInstanceRef.current}/>
 		</div>
 	)
