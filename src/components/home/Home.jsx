@@ -37,7 +37,7 @@ const Home = () => {
 	
 	return (
 		<main>
-			<div className="max-w-screen-xl mx-auto space-y-2">
+			<div className="max-w-screen-xl mx-auto space-y-2 px-5 pt-5">
 				<h1 className="text-2xl sm:text-3xl font-bold">Kávé Ízkerék</h1>
 				<div className="flex items-center space-x-2">
 					<Switch
@@ -58,7 +58,7 @@ const Home = () => {
 					onSelect={onSelect}/>
 			)}
 			<CoffeeDialog ref={dialogRef}/>
-			<div className="max-w-screen-xl mx-auto">
+			<div className="max-w-screen-xl mx-auto px-5 pb-5">
 				<h2 className="text-xl sm:text-2xl font-bold mb-2">Kávé lista</h2>
 				<Table>
 					<TableHeader>
