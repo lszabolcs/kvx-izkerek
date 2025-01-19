@@ -9,12 +9,14 @@ import { Label } from 'components/ui/label'
 import {
 	Table,
 	TableBody,
+	TableCaption,
 	TableHeader
 } from 'components/ui/table'
 
 import CoffeeRow from 'components/coffeerow/CoffeeRow'
 import SunburstChart from 'components/sunburst/SunburstChart'
 import CoffeeDialog from 'components/coffeedialog/CoffeeDialog'
+import RoastDotList from 'components/roastdot/RoastDotList'
 
 import tasteMap from '../../data/tasteMap'
 import coffeeList, { sortByName } from '../../data/coffeeList'
@@ -67,6 +69,9 @@ const Home = () => {
 					<TableBody>
 						{coffeeList.map((coffee) => <CoffeeRow data={coffee} key={`${coffee.name}-${coffee.roast}`}/>)}
 					</TableBody>
+					<TableCaption>
+						<RoastDotList/>
+					</TableCaption>
 				</Table>
 			</div>
 		</main>

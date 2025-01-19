@@ -14,10 +14,12 @@ import {
 import {
 	Table,
 	TableBody,
-	TableHeader
+	TableHeader,
+	TableCaption
 } from 'components/ui/table'
 
 import CoffeeRow from 'components/coffeerow/CoffeeRow'
+import RoastDotList from 'components/roastdot/RoastDotList'
 
 import coffeeList from 'data/coffeeList'
 
@@ -57,6 +59,9 @@ const CoffeeDialog = forwardRef((_, ref) => {
 					<TableBody>
 						{selectedCoffees.map((coffee) => <CoffeeRow data={coffee} key={`${coffee.name}-${coffee.roast}`}/>)}
 					</TableBody>
+					<TableCaption>
+						<RoastDotList/>
+					</TableCaption>
 				</Table>
 			</DialogContent>
 		</Dialog>

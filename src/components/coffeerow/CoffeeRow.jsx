@@ -13,6 +13,8 @@ import {
 
 import { ExternalLink, Info } from 'lucide-react'
 
+import RoastDot from 'components/roastdot/RoastDot'
+
 import tasteMap from 'data/tasteMap'
 import TasteMapFilter from 'data/tasteMapFilter'
 
@@ -65,7 +67,7 @@ const CoffeeRow = ({
 
 	return (
 		<TableRow className="flex flex-wrap py-4 gap-2 sm:table-row sm:p-0">
-			<TableCell className="p-0 grow max-w-[calc(100%-2rem)] text-balance sm:p-2">
+			<TableCell className="p-0 grow max-w-[calc(100%-2rem)] text-balance text-base sm:p-2">
 				<a
 					className="hover:underline"
 					href={url}
@@ -75,7 +77,9 @@ const CoffeeRow = ({
 					<ExternalLink className="inline-block ml-2 w-4 h-4"/>
 				</a>
 			</TableCell>
-			<TableCell className="font-bold p-0 sm:p-2">{data?.roast}</TableCell>
+			<TableCell className="p-0 sm:p-2">
+				{data?.roast && <RoastDot level={data.roast}/>}
+			</TableCell>
 			<TableCell className="w-full flex flex-wrap gap-2 items-start p-0 sm:w-auto sm:justify-end sm:p-2">
 				{data?.desc && renderDesc(data.desc)}
 				{data?.notes?.map((n) => renderTaste(n))}
