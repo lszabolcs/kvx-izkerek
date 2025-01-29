@@ -27,6 +27,7 @@ const SunburstChart = ({
 		chartConfig.interactivity().selectionMode('none')
 		chartConfig.padding(0)
 		chartConfig.margin(0)
+		chartConfig.tooltip().useHtml(true)
 		chartConfig.container(containerName)
 		chartConfig.listen('pointClick', onClick)
 		return chartConfig.draw()
