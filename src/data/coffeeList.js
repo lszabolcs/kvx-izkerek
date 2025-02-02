@@ -61,35 +61,19 @@ const avxBlend = [
 
 const brasil = [
 	{
-		name: 'Brazil Santos',
-		roast: 'S',
-		notes: ['diofelek', 'kakao', 'etcsokolade']
-	},
-	{
-		name: 'Brazil Fazenda Rainha Yellow Bourbon Specialty 86p',
+		name: 'Brazil Bom Dia Signature',
 		roast: 'KS',
-		notes: ['fekete-tea', 'diofelek', 'mogyoro'],
-		desc: 'Tea, dió, mogyoró vaj'
-	},
-	{
-		name: 'Brazil Santos',
-		roast: 'KS',
-		notes: ['diofelek', 'kakao', 'etcsokolade']
-	},
-	{
-		name: 'Brazil Santos CO2 Koffeinmentes',
-		roast: 'KS',
-		notes: ['etcsokolade', 'kakao', 'mez']
-	},
-	{
-		name: 'Brazil natural Obata Fazenda da Lagoa Specialty 84p',
-		roast: 'KS',
-		notes: ['etcsokolade', 'diofelek']
+		notes: ['cseresznye', 'csokolade', 'mogyoro', 'mazsola', 'karamellizalt']
 	},
 	{
 		name: 'Brazil Carbonic Natural Koffeinmentes',
 		roast: 'KS',
 		notes: ['etcsokolade', 'kakao', 'mez']
+	},
+	{
+		name: 'Brazil Fazenda Da Lagoa CO2 Footprint Natural Specialty 84p',
+		roast: 'KV',
+		notes: ['etcsokolade', 'diofelek']
 	},
 	{
 		name: 'Brazil Fazenda Dona Nenem Specialty 84p',
@@ -104,9 +88,41 @@ const brasil = [
 	},
 	{
 		name: 'Brazil Fazenda Rainha Yellow Bourbon Specialty 86p',
+		roast: 'KS',
+		notes: ['fekete-tea', 'diofelek', 'mogyoro'],
+		desc: 'Tea, dió, mogyoró vaj'
+	},
+	{
+		name: 'Brazil Fazenda Rainha Yellow Bourbon Specialty 86p',
 		roast: 'KV',
 		notes: ['fekete-tea', 'diofelek', 'mogyoro'],
 		desc: 'Tea, dió, mogyoró vaj'
+	},
+	{
+		name: 'Brazil Fazenda Sertao Yellow Bourbon Specialty 84p',
+		roast: 'KS',
+		notes: ['edes', 'egyeb-gyumolcs', 'csokolade'],
+		desc: 'jó édesség, sima test, leníz gyümölcsök és csokoládé.'
+	},
+	{
+		name: 'Brazil Santos',
+		roast: 'KS',
+		notes: ['diofelek', 'kakao', 'etcsokolade']
+	},
+	{
+		name: 'Brazil Santos',
+		roast: 'S',
+		notes: ['diofelek', 'kakao', 'etcsokolade']
+	},
+	{
+		name: 'Brazil Santos CO2 Koffeinmentes',
+		roast: 'KS',
+		notes: ['etcsokolade', 'kakao', 'mez']
+	},
+	{
+		name: 'Brazil natural Obata Fazenda da Lagoa Specialty 84p',
+		roast: 'KS',
+		notes: ['etcsokolade', 'diofelek']
 	}
 ]
 
@@ -127,6 +143,21 @@ const columbia = [
 		notes: ['egyeb-gyumolcs'],
 		desc: 'Trópusi licsi'
 	},
+]
+
+const costaRica = [
+	{
+		name: 'Costa Rica Palmichal Micromill Honey Natural',
+		roast: 'KS',
+		notes: ['oszibarack', 'citrus'],
+		desc: 'őszibarack, mandaran gyümölcs ízek'
+	},
+	{
+		name: 'Costa Rica SHB EP Washed',
+		roast: 'KS',
+		notes: ['piritott', 'diofelek', 'citrus', 'bors'],
+		desc: 'Pörkölt gesztenye, citrusos savassággal és némi borsos fűszerességgel kiegészítve.'
+	}
 ]
 
 const elSalvador = [
@@ -160,6 +191,35 @@ const etiopia = [
 		roast: 'V',
 		notes: ['gyumolcsos', 'viragos', 'narancs'],
 		desc: 'Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi narancsos savassággal és nugátos ízzel.'
+	},
+	{
+		name: 'Ethiopia washed Yirgacheffe Kochere',
+		roast: 'V',
+		notes: ['gyumolcsos', 'viragos', 'narancs'],
+		desc: 'Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi narancsos savassággal és nugátos ízzel.'
+	}
+]
+
+const guatemala = [
+	{
+		name: 'Guatemala SHB EP Catuai Finca El Gigante Specialty 84p',
+		roast: 'KS',
+		notes: ['egyeb-gyumolcs'],
+		desc: 'maracuja és keksz'
+	},
+	{
+		name: 'Guatemala SHB EP Specialty 84p',
+		roast: 'KS',
+		notes: ['fekete-tea', 'aszalt-gyumolcs'],
+	}
+]
+
+const honduras = [
+	{
+		name: 'Honduras Pacamara Hacienda Montecristo Specialty 86p',
+		roast: 'KS',
+		notes: ['csokolade', 'diofelek', 'egyeb-gyumolcs', 'citrom'],
+		desc: 'Íze csokoládé, dió és trópusi gyümölcs. Citromsav, sima test'
 	}
 ]
 
@@ -227,8 +287,11 @@ const coffeeList = [
 	...avxBlend,
 	...brasil,
 	...columbia,
+	...costaRica,
 	...elSalvador,
 	...etiopia,
+	...guatemala,
+	...honduras,
 	...india,
 	...nicaragua,
 	...tanzania,
@@ -245,21 +308,10 @@ const coffeeList = [
 		notes: ['gyumolcsos', 'csokolade']
 	},
 	{
-		name: 'Costa Rica Palmichal Micromill Honey Natural',
-		roast: 'KS',
-		notes: ['oszibarack', 'citrus'],
-		desc: 'őszibarack, mandaran gyümölcs ízek'
-	},
-	{
 		name: 'Ecuador Vilcabamba Especial de Apecael',
 		roast: 'KV',
 		notes: ['gyumolcsos'],
 		desc: 'csonthéjas gyömölcsök'
-	},
-	{
-		name: 'Guatemala SHB EP Specialty 84p',
-		roast: 'KS',
-		notes: ['fekete-tea', 'aszalt-gyumolcs'],
 	},
 	{
 		name: 'Rwanda washed Sake Womens Coffee Specialty 86p',
