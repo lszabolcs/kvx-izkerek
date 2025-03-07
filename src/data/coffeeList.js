@@ -55,7 +55,7 @@ const avxBlend = [
 		name: 'Bécsi Keringő Limited Edition Blend',
 		roast: 'KV',
 		notes: ['gyumolcsos'],
-		desc: 'csonthéjas gyümölcsök'
+		desc: 'Csonthéjas gyümölcsök.'
 	}
 ]
 
@@ -90,19 +90,19 @@ const brasil = [
 		name: 'Brazil Fazenda Rainha Yellow Bourbon Specialty 86p',
 		roast: 'KS',
 		notes: ['fekete-tea', 'diofelek', 'mogyoro'],
-		desc: 'Tea, dió, mogyoró vaj'
+		desc: 'Tea, dió, mogyoró vaj.'
 	},
 	{
 		name: 'Brazil Fazenda Rainha Yellow Bourbon Specialty 86p',
 		roast: 'KV',
 		notes: ['fekete-tea', 'diofelek', 'mogyoro'],
-		desc: 'Tea, dió, mogyoró vaj'
+		desc: 'Tea, dió, mogyoró vaj.'
 	},
 	{
 		name: 'Brazil Fazenda Sertao Yellow Bourbon Specialty 84p',
 		roast: 'KS',
 		notes: ['edes', 'egyeb-gyumolcs', 'csokolade'],
-		desc: 'jó édesség, sima test, leníz gyümölcsök és csokoládé.'
+		desc: 'Jó édesség, sima test, leníz gyümölcsök és csokoládé.'
 	},
 	{
 		name: 'Brazil Santos',
@@ -123,6 +123,12 @@ const brasil = [
 		name: 'Brazil natural Obata Fazenda da Lagoa Specialty 84p',
 		roast: 'KS',
 		notes: ['etcsokolade', 'diofelek']
+	},
+	{
+		name: 'Brazil Mogiana Scr 17/18 fine cup',
+		roast: 'KS',
+		notes: ['edes', 'savanyu', 'csokolade', 'diofelek', 'gyumolcsos'],
+		desc: 'Enyhén édes illatú, enyhe savakkal, telt és kerek testtel rendelkezik, csokoládé, dió és gyümölcs ízekkel.'
 	}
 ]
 
@@ -138,11 +144,22 @@ const columbia = [
 		notes: ['etcsokolade', 'kakao', 'mez', 'narancs']
 	},
 	{
-		name: 'Colombia Geisha Lychee Cauca Excelso EP Finca El Paraiso',
+		name: 'Colombia Geisha Cinnamon Cauca Excelso EP Finca El Paraiso',
+		roast: 'V',
+		notes: ['fekete-tea', 'edes'],
+		desc: 'Zöld tea. Ez a kávé almasavú, közepesen édes, intenzív, telt testű.'
+	},
+	{
+		name: 'Colombia Geisha Lychee Cauca Excelso EP Finca El Paraiso.',
 		roast: 'V',
 		notes: ['egyeb-gyumolcs'],
 		desc: 'Trópusi licsi'
 	},
+	{
+		name: 'Colombia Supremo Sofia',
+		roast: 'KS',
+		notes: ['csokolade', 'grapefruit']
+	}
 ]
 
 const costaRica = [
@@ -150,7 +167,7 @@ const costaRica = [
 		name: 'Costa Rica Palmichal Micromill Honey Natural',
 		roast: 'KS',
 		notes: ['oszibarack', 'citrus'],
-		desc: 'őszibarack, mandaran gyümölcs ízek'
+		desc: 'őszibarack, mandaran gyümölcs ízek.'
 	},
 	{
 		name: 'Costa Rica SHB EP Washed',
@@ -174,6 +191,12 @@ const elSalvador = [
 ]
 
 const etiopia = [
+	{
+		name: 'Ethiopia Sidamo Aleta Wondo',
+		roast: 'V',
+		notes: ['fekete-tea', 'citrom'],
+		desc: 'Citromos fekete teára hasonlít. Közepesen testes kávé.'
+	},
 	{
 		name: 'Ethiopia Sidamo GR1 Shantawene Bombe natural',
 		roast: 'V',
@@ -216,10 +239,16 @@ const guatemala = [
 
 const honduras = [
 	{
+		name: 'Honduras Cauful Organic Specialty 82p',
+		roast: 'KS',
+		notes: ['csokolade', 'edes', 'citrus', 'gyogynoveny'],
+		desc: 'Tejcsokoládé, édes briós, citrusfélék, vajas és gyógynövényes; sima test.'
+	},
+	{
 		name: 'Honduras Pacamara Hacienda Montecristo Specialty 86p',
 		roast: 'KS',
 		notes: ['csokolade', 'diofelek', 'egyeb-gyumolcs', 'citrom'],
-		desc: 'Íze csokoládé, dió és trópusi gyümölcs. Citromsav, sima test'
+		desc: 'Íze csokoládé, dió és trópusi gyümölcs. Citromsav, sima test.'
 	}
 ]
 
@@ -236,12 +265,21 @@ const india = [
 	},
 ]
 
+const kenya = [
+	{
+		name: 'Kenya AA Plus',
+		roast: 'V',
+		notes: ['citrom', 'egyeb-gyumolcs', 'afonya'],
+		desc: 'Érett citrom, kajszibarack és áfonya.'
+	}
+]
+
 const nicaragua = [
 	{
 		name: 'Nicaragua SHG El Limoncillo Estate Specialty-84p',
 		roast: 'KS',
 		notes: ['egyeb-gyumolcs', 'alkohol', 'narancs'],
-		desc: 'passiógyümölcs ízei, rum, és narancshéj'
+		desc: 'Passiógyümölcs ízei, rum, és narancshéj.'
 	}
 ]
 
@@ -255,7 +293,7 @@ const tanzania = [
 		name: 'Tanzania Mwankumbi Specialty 87p',
 		roast: 'KV',
 		notes: ['citrus', 'cseresznye', 'csokolade', 'karamellizalt', 'melasz'],
-		desc: 'mandarin, fekete cseresznye, csokoládé szirup, karamell, melasz; élénk savasság, selymes test'
+		desc: 'Mandarin, fekete cseresznye, csokoládé szirup, karamell, melasz; élénk savasság, selymes test.'
 	},
 ]
 
@@ -264,7 +302,7 @@ const panama = [
 		name: 'Panama El Hortigal Estate Specialty-88p',
 		roast: 'KV',
 		notes: ['gyumolcsos'],
-		desc: 'csonthéjas gyümölcsök'
+		desc: 'Csonthéjas gyümölcsök.'
 	}
 ]
 
@@ -273,13 +311,19 @@ const peru = [
 		name: 'Peru Cemcavir Geisha Finca Mariposa',
 		roast: 'V',
 		notes: ['cseresznye'],
-		desc: 'Keksz, cseresznye'
+		desc: 'Keksz, cseresznye.'
 	},
 	{
 		name: 'Peru Cemcavir Geisha Finca La Esperanza',
 		roast: 'KV',
 		notes: ['csokolade', 'cseresznye', 'aszalt-gyumolcs', 'alkohol'],
-		desc: 'csokoládé, cseresznye, szárított gyümölcsök és rum'
+		desc: 'Csokoládé, cseresznye, szárított gyümölcsök és rum.'
+	},
+	{
+		name: 'Peru Cemcavir Geisha Anaerobic',
+		roast: 'V',
+		notes: ['csokolade', 'cseresznye', 'aszalt-gyumolcs', 'alkohol'],
+		desc: 'Csokoládé, cseresznye, szárított gyümölcsök és rum.'
 	}
 ]
 
@@ -293,6 +337,7 @@ const coffeeList = [
 	...guatemala,
 	...honduras,
 	...india,
+	...kenya,
 	...nicaragua,
 	...tanzania,
 	...panama,
