@@ -42,6 +42,11 @@ const avxBlend = [
 		notes: ['csokolade']
 	},
 	{
+		name: 'AVX India Malabar Blend',
+		roast: 'KS',
+		notes: ['fuszerek', 'dohany']
+	},
+	{
 		name: 'Béla papa kedvence Blend',
 		roast: 'KS',
 		notes: ['csokolade', 'mogyoro', 'ananasz', 'eper']
@@ -85,6 +90,11 @@ const brasil = [
 		name: 'Brazil Fazenda do Lobo Mundo Novo Anaerobic Specialty 86p',
 		roast: 'KV',
 		notes: ['etcsokolade', 'diofelek']
+	},
+	{
+		name: 'Brazil Fazenda Miaki Yellow Bourbon ',
+		roast: 'KS',
+		notes: ['mogyoro', 'csokolade', 'narancs']
 	},
 	{
 		name: 'Brazil Fazenda Rainha Yellow Bourbon Specialty 86p',
@@ -254,6 +264,12 @@ const honduras = [
 
 const india = [
 	{
+		name: 'India Plantation AA',
+		roast: 'KS',
+		notes: ['csokolade', 'mogyoro', 'edes'],
+		desc: 'Tejcsokoládé, mogyoró, keksz. Édes, közepesen testes és alacsony savasság.'
+	},
+	{
 		name: 'India Robusta Cherry AA',
 		roast: 'S',
 		notes: ['fuszerek', 'etcsokolade', 'magvak']
@@ -276,10 +292,25 @@ const kenya = [
 
 const nicaragua = [
 	{
+		name: 'Nicaragua Maragogype Laguna Verde Specialty-87p',
+		roast: 'KV',
+		notes: ['gyumolcsos', 'edes', 'alma'],
+		desc: 'Csonthéjas gyümölcsök, cukornád és alma ízek'
+	},
+	{
 		name: 'Nicaragua SHG El Limoncillo Estate Specialty-84p',
 		roast: 'KS',
 		notes: ['egyeb-gyumolcs', 'alkohol', 'narancs'],
 		desc: 'Passiógyümölcs ízei, rum, és narancshéj.'
+	}
+]
+
+const mexico = [
+	{
+		name: 'Mexico Maragogype Superior washed Specialty-88p',
+		roast: 'KV',
+		notes: ['csokolade', 'oszibarack', 'citrom'],
+		desc: 'Tejcsokoládé, Sárgabarack, Citrom'
 	}
 ]
 
@@ -339,6 +370,7 @@ const coffeeList = [
 	...india,
 	...kenya,
 	...nicaragua,
+	...mexico,
 	...tanzania,
 	...panama,
 	...peru,
