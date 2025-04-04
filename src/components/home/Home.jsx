@@ -27,7 +27,10 @@ const Home = () => {
 	const dialogRef = useRef(null)
 	coffeeList.sort(sortByName)
 
-	const onSelect = (newSelectedTaste) => dialogRef.current.update(newSelectedTaste)
+	const onSelect = (newSelectedTaste) => {
+		window?.umami?.track('taste-selected')
+		dialogRef.current.update(newSelectedTaste)
+	}
 
 	const notes = new Set()
 	coffeeList.forEach((coffee) => {
