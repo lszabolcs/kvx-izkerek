@@ -214,6 +214,12 @@ const etiopia = [
 		desc: 'Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi őszibarak, fekete tea.'
 	},
 	{
+		name: 'Ethiopia Sidamo GR1 Shantawene natural',
+		roast: 'V',
+		notes: ['egyeb-gyumolcs', 'citrus', 'viragos'],
+		desc: 'Trópusi gyümölcsök, citrusfélék és virágos jegyek.'
+	},
+	{
 		name: 'Ethiopia washed Limu',
 		roast: 'V',
 		notes: ['gyumolcsos', 'viragos', 'narancs'],
@@ -316,6 +322,11 @@ const mexico = [
 
 const tanzania = [
 	{
+		name: 'Tanzania AA Utengule Estate Honey Specialty 86p',
+		roast: 'KV',
+		notes: ['bogyos-gyumolcs', 'mez', 'csokolade']
+	},
+	{
 		name: 'Tanzania Ngila Estate Peak Season Special Kent Specialty 88p',
 		roast: 'KV',
 		notes: ['grapefruit', 'citrus', 'fekete-tea']
@@ -338,6 +349,11 @@ const panama = [
 ]
 
 const peru = [
+	{
+		name: 'Peru Carbonic Natural Koffeinmentes',
+		roast: 'KS',
+		notes: ['etcsokolade', 'kakao', 'mez', 'narancs']
+	},
 	{
 		name: 'Peru Cemcavir Geisha Finca Mariposa',
 		roast: 'V',
