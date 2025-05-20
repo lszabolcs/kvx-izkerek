@@ -32,7 +32,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve": "serve -s build"
+    "serve": "serve -s build",
+    "_prepare_serve_subpath": "rm -rf .serve_temp && mkdir -p .serve_temp/kvx-izkerek && cp -a build/. .serve_temp/kvx-izkerek/ && cp serve.json .serve_temp/serve.json",
+    "serve:subpath": "yarn _prepare_serve_subpath && serve .serve_temp -l 3000"
   },
   "eslintConfig": {
     "extends": [
