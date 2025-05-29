@@ -21,14 +21,12 @@ import {
 import CoffeeRow from 'components/coffeerow/CoffeeRow'
 import RoastDotList from 'components/roastdot/RoastDotList'
 
-import coffeeList from 'data/coffeeList'
-
 const CoffeeDialog = forwardRef((_, ref) => {
 	const [selectedTaste, setSelectedTaste] = useState('')
 	const [selectedCoffees, setSelectedCoffees] = useState([])
 
 	useImperativeHandle(ref, () => ({
-		update: (taste) => {
+		update: (coffeeList, taste) => {
 			const coffees = coffeeList.filter((coffee) => coffee.notes.includes(taste.slug))
 			setSelectedTaste(taste)
 			setSelectedCoffees(coffees)

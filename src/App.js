@@ -1,5 +1,5 @@
-import Home from 'components/home/Home'
-import Footer from 'components/footer/Footer'
+import Home from 'components/home/Home.jsx'
+import Footer from 'components/footer/Footer.jsx'
 
 const App = () => (
 	<div>

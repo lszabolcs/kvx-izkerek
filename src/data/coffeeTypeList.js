@@ -374,7 +374,7 @@ const peru = [
 	}
 ]
 
-const coffeeList = [
+const coffeeTypeList = [
 	...avxBlend,
 	...brasil,
 	...columbia,
@@ -414,14 +414,4 @@ const coffeeList = [
 	}
 ]
 
-const sortByName = (a, b) => {
-	const nameA = a.name.toUpperCase()
-  	const nameB = b.name.toUpperCase()
-	if (nameA < nameB) return -1
-	if (nameA > nameB) return 1
-	return 0
-}
-
-export { sortByName }
-
-export default coffeeList
+export default coffeeTypeList

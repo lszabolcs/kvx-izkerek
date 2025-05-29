@@ -2,6 +2,7 @@ import React, {
 	useState,
 	useRef
 } from 'react'
+import { sortByName, isRecent } from 'lib/utils'
 
 import { Switch } from 'components/ui/switch'
 import { Label } from 'components/ui/label'
@@ -19,58 +20,83 @@ import CoffeeDialog from 'components/coffeedialog/CoffeeDialog'
 import RoastDotList from 'components/roastdot/RoastDotList'
 
 import tasteMap from '../../data/tasteMap'
-import coffeeList, { sortByName } from '../../data/coffeeList'
+import coffeeList from '../../data/__generated/coffeeList'
 import TasteMapFilter from '../../data/tasteMapFilter'
 
 const Home = () => {
-	const [filtered, setFiltered] = useState(false)
+	const [filteredByTaste, setFilteredByTaste] = useState(false)
+	const [filteredByRecent, setFilteredByRecent] = useState(false)
 	const dialogRef = useRef(null)
-	coffeeList.sort(sortByName)
+
+	
+	const getCoffeList = () => {
+		coffeeList.sort(sortByName)
+		if (filteredByRecent) return coffeeList.filter((c) => isRecent(c?.lastSeen))
+		return coffeeList
+	}
+
+	const getChartData = () => {
+		if (!filteredByTaste) return tasteMap
+
+		const notes = new Set()
+		getCoffeList().forEach((coffee) => {
+			coffee.notes.forEach((note) => notes.add(note))
+		})
+
+		const tasteMapFilter = new TasteMapFilter(tasteMap, [ ...notes ])
+
+		return tasteMapFilter.getFilteredData()
+	}
+
+	const getChartName = () => {
+		if (filteredByTaste && filteredByRecent) return 'filtered-recent-map"'
+		if (filteredByRecent) return 'recent-map"'
+		if (filteredByTaste) return 'filtered-map"'
+		return 'full-map'
+	}
 
 	const onSelect = (newSelectedTaste) => {
 		window?.umami?.track('taste-selected')
-		dialogRef.current.update(newSelectedTaste)
+		dialogRef.current.update(getCoffeList(), newSelectedTaste)
 	}
-
-	const notes = new Set()
-	coffeeList.forEach((coffee) => {
-		coffee.notes.forEach((note) => notes.add(note))
-	})
-
-	const tasteMapFilter = new TasteMapFilter(tasteMap, [ ...notes ])
-	const tasteMapFiltered = tasteMapFilter.getFilteredData()
 	
 	return (
 		<main>
 			<div className="max-w-screen-xl mx-auto space-y-2 px-5 pt-5">
 				<h1 className="text-2xl sm:text-3xl font-bold">Kávé Ízkerék</h1>
+				{/* <div className="flex items-center space-x-2">
+					<Switch
+						id="filter-recent"
+						onCheckedChange={(e) => setFilteredByRecent(e)}/>
+					<Label htmlFor="filter-recent">Csak aktuális kávék</Label>
+				</div> */}
 				<div className="flex items-center space-x-2">
 					<Switch
-						id="filter"
-						onCheckedChange={(e) => setFiltered(e)}/>
-					<Label htmlFor="filter">Van kapcsolódó kávé</Label>
+						id="filter-taste"
+						onCheckedChange={(e) => setFilteredByTaste(e)}/>
+					<Label htmlFor="filter-taste">Van kapcsolódó kávé</Label>
 				</div>
 			</div>
-			{filtered ? (
-				<SunburstChart
-					data={tasteMapFiltered}
-					containerName="filtered-map"
-					onSelect={onSelect}/>
-			) : (
-				<SunburstChart
-					data={tasteMap}
-					containerName="full-map"
-					onSelect={onSelect}/>
-			)}
+			<SunburstChart
+				data={getChartData()}
+				containerName={getChartName()}
+				onSelect={onSelect}/>
 			<CoffeeDialog ref={dialogRef}/>
 			<div className="max-w-screen-xl mx-auto px-5 pb-5">
-				<h2 className="text-xl sm:text-2xl font-bold mb-2">Kávé lista</h2>
+				<h2 className="text-xl sm:text-2xl font-bold mb-2">
+					{filteredByRecent ? (
+						<>
+							<span className="mr-2">Aktuális kávé lista</span>
+							<span className="text-base font-normal">(az elmúlt 30 napban felbukkant a shopban)</span>
+						</>
+					) : 'Kávé lista'}
+				</h2>
 				<Table>
 					<TableHeader>
 						<CoffeeRow header/>
 					</TableHeader>
 					<TableBody>
-						{coffeeList.map((coffee) => <CoffeeRow data={coffee} key={`${coffee.name}-${coffee.roast}`}/>)}
+						{getCoffeList().map((coffee) => <CoffeeRow data={coffee} key={`${coffee.name}-${coffee.roast}`}/>)}
 					</TableBody>
 					<TableCaption>
 						<RoastDotList/>

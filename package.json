@@ -1,8 +1,9 @@
 {
   "name": "kvx",
-  "version": "0.1.0",
-  "homepage": "https://lszabolcs.github.io/kvx-izkerek/",
+  "version": "0.1.1",
+  "homepage": "http://lszabolcs.github.io/kvx-izkerek/",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.4",
     "@radix-ui/react-label": "^2.1.1",
@@ -16,6 +17,7 @@
     "class-variance-authority": "^0.7.1",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
+    "dotenv": "^16.5.0",
     "lucide-react": "^0.469.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,7 +25,8 @@
     "serve": "^14.2.4",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "xml2js": "^0.6.2"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -34,7 +37,9 @@
     "eject": "react-scripts eject",
     "serve": "serve -s build",
     "_prepare_serve_subpath": "rm -rf .serve_temp && mkdir -p .serve_temp/kvx-izkerek && cp -a build/. .serve_temp/kvx-izkerek/ && cp serve.json .serve_temp/serve.json",
-    "serve:subpath": "yarn _prepare_serve_subpath && serve .serve_temp -l 3000"
+    "serve:subpath": "yarn _prepare_serve_subpath && serve .serve_temp -l 3000",
+    "update-feed": "node ./scripts/updateFeed.js",
+    "update-dates": "node ./scripts/updateLastSeen.js"
   },
   "eslintConfig": {
     "extends": [
