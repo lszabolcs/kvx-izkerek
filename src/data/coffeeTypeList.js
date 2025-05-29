@@ -1,8 +1,8 @@
 const avxBlend = [
 	{
-		name: 'AVX Good Morning Blend',
+		name: 'Automata Blend 70/30',
 		roast: 'S',
-		notes: ['csokolade']
+		notes: ['kakao', 'etcsokolade'],
 	},
 	{
 		name: 'AVX Bronze',
@@ -11,19 +11,14 @@ const avxBlend = [
 		desc: 'Étcsokoládé, pörkölt mogyoró és kakaó.'
 	},
 	{
-		name: 'Automata Blend 70/30',
-		roast: 'S',
-		notes: ['kakao', 'etcsokolade'],
+		name: 'AVX Choco & Orange Blend',
+		roast: 'KV',
+		notes: ['etcsokolade', 'narancs']
 	},
 	{
-		name: 'La Dolce Vita 80/20-as Blend',
-		roast: 'S',
-		notes: ['etcsokolade', 'kakao'],
-	},
-	{
-		name: 'AVX Silver',
+		name: 'AVX Diamond',
 		roast: 'KS',
-		notes: ['mogyoro', 'diofelek', 'kakao', 'narancs']
+		notes: ['mogyoro', 'csokolade', 'gyumolcsos']
 	},
 	{
 		name: 'AVX Espresso',
@@ -37,8 +32,8 @@ const avxBlend = [
 		notes: ['mogyoro', 'csokolade', 'gyumolcsos']
 	},
 	{
-		name: 'AVX 100% Arabica Blend',
-		roast: 'KS',
+		name: 'AVX Good Morning',
+		roast: 'S',
 		notes: ['csokolade']
 	},
 	{
@@ -47,21 +42,37 @@ const avxBlend = [
 		notes: ['fuszerek', 'dohany']
 	},
 	{
-		name: 'Béla papa kedvence Blend',
+		name: 'AVX Jin-Jang Blend',
 		roast: 'KS',
-		notes: ['csokolade', 'mogyoro', 'ananasz', 'eper']
+		notes: ['csokolade', 'mogyoro', 'ananasz', 'egyeb-gyumolcs'],
+		desc: 'Tejcsokoládé, mogyoró, az ananász édességével és trópusi gyümölcsséggel.'
 	},
 	{
-		name: 'AVX Choco & Orange Blend',
-		roast: 'KV',
-		notes: ['etcsokolade', 'narancs']
+		name: 'AVX Silver',
+		roast: 'KS',
+		notes: ['mogyoro', 'diofelek', 'kakao', 'narancs']
+	},
+	{
+		name: 'AVX 100% Arabica Blend',
+		roast: 'KS',
+		notes: ['csokolade']
 	},
 	{
 		name: 'Bécsi Keringő Limited Edition Blend',
 		roast: 'KV',
 		notes: ['gyumolcsos'],
 		desc: 'Csonthéjas gyümölcsök.'
-	}
+	},
+	{
+		name: 'Béla papa kedvence Blend',
+		roast: 'KS',
+		notes: ['csokolade', 'mogyoro', 'ananasz', 'eper']
+	},
+	{
+		name: 'La Dolce Vita 80/20-as Blend',
+		roast: 'S',
+		notes: ['etcsokolade', 'kakao'],
+	},
 ]
 
 const brasil = [
@@ -250,6 +261,11 @@ const guatemala = [
 		name: 'Guatemala SHB EP Specialty 84p',
 		roast: 'KS',
 		notes: ['fekete-tea', 'aszalt-gyumolcs'],
+	},
+	{
+		name: 'Guatemala SHB EP Santa Rosa Specialty 84p',
+		roast: 'KS',
+		notes: ['fekete-tea', 'aszalt-gyumolcs']
 	}
 ]
 
@@ -302,6 +318,12 @@ const nicaragua = [
 		roast: 'KV',
 		notes: ['gyumolcsos', 'edes', 'alma'],
 		desc: 'Csonthéjas gyümölcsök, cukornád és alma ízek'
+	},
+	{
+		name: 'Nicaragua Red Pacamara El Limoncillo Specialty-88p',
+		roast: 'KV',
+		notes: ['egyeb-gyumolcs', 'alkohol', 'narancs'],
+		desc: 'Passiógyümölcs ízei, rum, és narancshéj.'
 	},
 	{
 		name: 'Nicaragua SHG El Limoncillo Estate Specialty-84p',
@@ -374,6 +396,35 @@ const peru = [
 	}
 ]
 
+const png = [
+	{
+		name: 'PNG Hai Tambu',
+		roast: 'KS',
+		notes: ['gyogynoveny', 'egyeb-gyumolcs', 'citrus'],
+		desc: 'Gyógynövények, fekete ribizli, mandarin'
+	},
+	{
+		name: 'PNG Washed Arabica Korofeigu Grade',
+		roast: 'KS',
+		notes: ['karamellizalt', 'vanilia', 'csokolade']
+	}
+]
+
+const rwanda = [
+	{
+		name: 'Rwanda Inagagi Specialty 85p',
+		roast: 'KV',
+		notes: ['gyumolcsos', 'bogyos-gyumolcs'],
+		desc: 'csonthéjas gyümölcsök, bogyók'
+	},
+	{
+		name: 'Rwanda washed Sake Womens Coffee Specialty 86p',
+		roast: 'KV',
+		notes: ['fuszerek', 'citrus'],
+		desc: 'Fűszernövények, mandarin'
+	}
+]
+
 const coffeeTypeList = [
 	...avxBlend,
 	...brasil,
@@ -390,11 +441,8 @@ const coffeeTypeList = [
 	...tanzania,
 	...panama,
 	...peru,
-	{
-		name: 'PNG Washed Arabica Korofeigu Grade',
-		roast: 'KS',
-		notes: ['karamellizalt', 'vanilia', 'csokolade']
-	},
+	...png,
+	...rwanda,
 	{
 		name: 'Indonesia Toraja Kalossi Gr.1',
 		roast: 'KS',
@@ -405,12 +453,6 @@ const coffeeTypeList = [
 		roast: 'KV',
 		notes: ['gyumolcsos'],
 		desc: 'csonthéjas gyömölcsök'
-	},
-	{
-		name: 'Rwanda washed Sake Womens Coffee Specialty 86p',
-		roast: 'KV',
-		notes: ['fuszerek', 'citrus'],
-		desc: 'Fűszernövények, mandarin'
 	}
 ]
 
