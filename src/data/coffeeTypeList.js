@@ -108,6 +108,12 @@ const brasil = [
 		notes: ['mogyoro', 'csokolade', 'narancs']
 	},
 	{
+		name: 'Brazil Fazenda Rainha Yellow Bourbon pulped natural Specialty 84p',
+		roast: 'KS',
+		notes: ['diofelek', 'gyumolcsos'],
+		desc: 'Makadám dió, gyömölcsök.'
+	},
+	{
 		name: 'Brazil Fazenda Rainha Yellow Bourbon Specialty 86p',
 		roast: 'KS',
 		notes: ['fekete-tea', 'diofelek', 'mogyoro'],
