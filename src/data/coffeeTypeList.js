@@ -264,6 +264,12 @@ const guatemala = [
 		desc: 'maracuja és keksz'
 	},
 	{
+		name: 'Guatemala SHB EP Huehuetenango Specialty 84p',
+		roast: 'KS',
+		notes: ['narancs', 'csokolade'],
+		desc: 'Narancs, Tejcsokoládé, Keksz'
+	},
+	{
 		name: 'Guatemala SHB EP Specialty 84p',
 		roast: 'KS',
 		notes: ['fekete-tea', 'aszalt-gyumolcs'],
