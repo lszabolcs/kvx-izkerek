@@ -4,6 +4,7 @@ import React, {
 } from 'react'
 import { sortByName, isRecent } from 'lib/utils'
 
+import { Button } from 'components/ui/button'
 import { Switch } from 'components/ui/switch'
 import { Label } from 'components/ui/label'
 
@@ -16,7 +17,8 @@ import {
 
 import CoffeeRow from 'components/coffeerow/CoffeeRow'
 import SunburstChart from 'components/sunburst/SunburstChart'
-import CoffeeDialog from 'components/coffeedialog/CoffeeDialog'
+import CoffeeDialog from 'components/dialogs/CoffeeDialog'
+import InfoDialog from 'components/dialogs/InfoDialog'
 import RoastDotList from 'components/roastdot/RoastDotList'
 
 import tasteMap from '../../data/tasteMap'
@@ -26,7 +28,8 @@ import TasteMapFilter from '../../data/tasteMapFilter'
 const Home = () => {
 	const [filteredByTaste, setFilteredByTaste] = useState(false)
 	const [filteredByRecent, setFilteredByRecent] = useState(false)
-	const dialogRef = useRef(null)
+	const infoDialogRef = useRef(null)
+	const coffeDialogRef = useRef(null)
 
 	
 	const getCoffeList = () => {
@@ -57,19 +60,22 @@ const Home = () => {
 
 	const onSelect = (newSelectedTaste) => {
 		window?.umami?.track('taste-selected')
-		dialogRef.current.update(getCoffeList(), newSelectedTaste)
+		coffeDialogRef.current.update(getCoffeList(), newSelectedTaste)
 	}
 	
 	return (
 		<main>
 			<div className="max-w-screen-xl mx-auto space-y-2 px-5 pt-5">
-				<h1 className="text-2xl sm:text-3xl font-bold">Kávé Ízkerék</h1>
-				{/* <div className="flex items-center space-x-2">
+				<div className="flex justify-between items-center">
+					<h1 className="text-2xl sm:text-3xl font-bold">Kávé Ízkerék</h1>
+					<Button variant="outline" onClick={() => infoDialogRef?.current?.open()}>Mi ez?</Button>
+				</div>
+				<div className="flex items-center space-x-2">
 					<Switch
 						id="filter-recent"
 						onCheckedChange={(e) => setFilteredByRecent(e)}/>
 					<Label htmlFor="filter-recent">Csak aktuális kávék</Label>
-				</div> */}
+				</div>
 				<div className="flex items-center space-x-2">
 					<Switch
 						id="filter-taste"
@@ -81,7 +87,8 @@ const Home = () => {
 				data={getChartData()}
 				containerName={getChartName()}
 				onSelect={onSelect}/>
-			<CoffeeDialog ref={dialogRef}/>
+			<CoffeeDialog ref={coffeDialogRef}/>
+			<InfoDialog ref={infoDialogRef}/>
 			<div className="max-w-screen-xl mx-auto px-5 pb-5">
 				<h2 className="text-xl sm:text-2xl font-bold mb-2">
 					{filteredByRecent ? (

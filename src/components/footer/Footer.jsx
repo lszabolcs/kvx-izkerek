@@ -43,7 +43,7 @@ const Footer = () => {
 				<div className="flex-1 space-y-2">
 					<p>
 						Adatok forrása:<br/>
-						{renderLink('https://www.avxcafe.hu/', 'AVX Kávé')}<br/>
+						{renderLink('https://www.avxcafe.hu/', 'AVX Café')}<br/>
 						{renderLink('https://sca.coffee/research/coffee-tasters-flavor-wheel', 'The Coffee Taster\'s Flavor Wheel')}
 					</p>
 					<p>
