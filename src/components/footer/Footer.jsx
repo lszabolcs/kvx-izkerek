@@ -47,22 +47,23 @@ const Footer = () => {
 						{renderLink('https://sca.coffee/research/coffee-tasters-flavor-wheel', 'The Coffee Taster\'s Flavor Wheel')}
 					</p>
 					<p>
-						Kávé rendelés csoport:<br/>
+						FB csoportok:<br/>
 						{renderLink('https://www.facebook.com/groups/5324832737623094', (
 							<>
 								<Facebook className="inline-block mr-2 w-4 h-4"/>
 								<span>AVX kávé vásárlói közösség</span>
 							</>
-						))}
-					</p>
-					<p>
-						Kávés csoport:<br/>
+						))}<br/>
 						{renderLink('https://www.facebook.com/groups/423671354643501', (
 							<>
 								<Facebook className="inline-block mr-2 w-4 h-4"/>
 								<span>KVX</span>
 							</>
 						))}
+					</p>
+					<p>
+						Utoljára frissítve:<br/>
+						<span className="font-bold">2025.07.11.</span>
 					</p>
 				</div>
 			</div>
