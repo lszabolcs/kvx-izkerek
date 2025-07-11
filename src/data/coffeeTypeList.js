@@ -87,6 +87,11 @@ const brasil = [
 		notes: ['etcsokolade', 'kakao', 'mez']
 	},
 	{
+		name: 'Brazil Fazenda da Lagoa Specialty 84p',
+		roast: 'KS',
+		notes: ['etcsokolade', 'diofelek']
+	},
+	{
 		name: 'Brazil Fazenda Da Lagoa CO2 Footprint Natural Specialty 84p',
 		roast: 'KV',
 		notes: ['etcsokolade', 'diofelek']
@@ -124,6 +129,12 @@ const brasil = [
 		roast: 'KV',
 		notes: ['fekete-tea', 'diofelek', 'mogyoro'],
 		desc: 'Tea, dió, mogyoró vaj.'
+	},
+	{
+		name: 'Brazil Fazenda Sertao Peaberry Natural Yellow Bourbon',
+		roast: 'KS',
+		notes: ['edes', 'gyumolcsos', 'csokolade'],
+		desc: 'Édes gyümölcsök, csokoládé.'
 	},
 	{
 		name: 'Brazil Fazenda Sertao Yellow Bourbon Specialty 84p',
@@ -219,6 +230,12 @@ const elSalvador = [
 
 const etiopia = [
 	{
+		name: 'Ethiopia Guji Tero Natural',
+		roast: 'V',
+		notes: ['gyumolcsos', 'viragos', 'oszibarack', 'fekete-tea'],
+		desc: 'Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi őszibarak, fekete tea.'
+	},
+	{
 		name: 'Ethiopia Sidamo Aleta Wondo',
 		roast: 'V',
 		notes: ['fekete-tea', 'citrom'],
@@ -289,6 +306,12 @@ const honduras = [
 		desc: 'Tejcsokoládé, édes briós, citrusfélék, vajas és gyógynövényes; sima test.'
 	},
 	{
+		name: 'Honduras SHG EP Guara Roja Red Honey Specialty 84p',
+		roast: 'KS',
+		notes: ['gyumolcsos', 'edes', 'savanyu'],
+		desc: 'Édes és élénk savasság, lédús ízvilágú kávé. Komplex aroma és különleges utóíz.'
+	},
+	{
 		name: 'Honduras Pacamara Hacienda Montecristo Specialty 86p',
 		roast: 'KS',
 		notes: ['csokolade', 'diofelek', 'egyeb-gyumolcs', 'citrom'],
@@ -336,6 +359,12 @@ const nicaragua = [
 		roast: 'KV',
 		notes: ['egyeb-gyumolcs', 'alkohol', 'narancs'],
 		desc: 'Passiógyümölcs ízei, rum, és narancshéj.'
+	},
+	{
+		name: 'Nicaragua SHB EP Jinotega Matagalpa Specialty',
+		roast: 'KS',
+		notes: ['oszibarack', 'kakao'],
+		desc: 'Kajszibarack, őszibarack, kakaó.'
 	},
 	{
 		name: 'Nicaragua SHG El Limoncillo Estate Specialty-84p',
