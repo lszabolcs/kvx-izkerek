@@ -63,7 +63,7 @@ const Footer = () => {
 					</p>
 					<p>
 						Utoljára frissítve:<br/>
-						<span className="font-bold">2025.07.11.</span>
+						<span className="font-bold">2025.07.24.</span>
 					</p>
 				</div>
 			</div>

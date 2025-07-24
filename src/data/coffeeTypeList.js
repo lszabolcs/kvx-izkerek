@@ -332,6 +332,12 @@ const india = [
 		notes: ['fuszerek', 'etcsokolade', 'magvak']
 	},
 	{
+		name: 'India Robusta Monsooned AA Aspinwall',
+		roast: 'S',
+		notes: ['diofelek', 'szemes-gabona'],
+		desc: 'Pörkölt dió, nugát, gabonafélék'
+	},
+	{
 		name: 'India Monsooned Malabar AA',
 		roast: 'KS',
 		notes: ['fuszerek', 'dohany']
