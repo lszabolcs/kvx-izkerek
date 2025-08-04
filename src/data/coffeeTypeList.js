@@ -440,6 +440,12 @@ const peru = [
 		roast: 'V',
 		notes: ['csokolade', 'cseresznye', 'aszalt-gyumolcs', 'alkohol'],
 		desc: 'Csokoládé, cseresznye, szárított gyümölcsök és rum.'
+	},
+	{
+		name: 'Peru Negrisa Gr1',
+		roast: 'KV',
+		notes: ['noveny', 'bogyos-gyumolcs'],
+		desc: 'Édes rebarbara , Sötét bogyós gyümölcsök'
 	}
 ]
 
