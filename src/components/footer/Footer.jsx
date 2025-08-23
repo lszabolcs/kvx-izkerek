@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Github, AtSign, Facebook } from 'lucide-react'
 
+import date from '../../data/__generated/date'
+
 const Footer = () => {
 	const renderLink = (href, content) => (
 		<a
@@ -12,6 +14,8 @@ const Footer = () => {
 			{content}
 		</a>
 	)
+
+	const lastUpdated = new Date(date?.lastUpdated)
 
 	return (
 		<footer className="max-w-screen-xl mx-auto mt-10 px-5 pb-5">
@@ -63,7 +67,7 @@ const Footer = () => {
 					</p>
 					<p>
 						Utoljára frissítve:<br/>
-						<span className="font-bold">2025.07.24.</span>
+						<span className="font-bold">{new Intl.DateTimeFormat('hu-HU', {dateStyle: 'short',}).format(lastUpdated)}</span>
 					</p>
 				</div>
 			</div>

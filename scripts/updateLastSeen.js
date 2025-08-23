@@ -80,6 +80,21 @@ async function saveCoffeeListToFile(list, outputPath) {
 	}
 }
 
+async function saveCurrentDateToFile(outputPath) {
+	try {
+		const outputDir = dirname(outputPath)
+		await mkdir(outputDir, { recursive: true })
+
+		const data = { lastUpdated: new Date().toISOString() }
+		const fileContent = `export default ${JSON.stringify(data, null, 2)};\n`
+
+		await writeFile(outputPath, fileContent, 'utf-8')
+		console.log(`Aktuális dátum elmentve: ${outputPath}`)
+	} catch (error) {
+		console.log(`Hiba az aktuális dátum mentése közben (${outputPath}):`, error.message)
+	}
+}
+
 function normalizeString(str) {
 	if (typeof str !== 'string' || !str) return ''
 	return str.toLowerCase().replace(/\s+/g, ' ').trim()
@@ -143,8 +158,11 @@ async function updateLastSeen() {
 	console.log(`Kávé lista: ${updatedCoffeList?.length}, talált: ${foundCount}`)
 	
 
-	const outputFilePath = join(projectRoot, 'src/data/__generated', 'coffeeList.js')
-	await saveCoffeeListToFile(updatedCoffeList, outputFilePath)
+	const outputListFilePath = join(projectRoot, 'src/data/__generated', 'coffeeList.js')
+	await saveCoffeeListToFile(updatedCoffeList, outputListFilePath)
+
+	const outputDateFilePath = join(projectRoot, 'src/data/__generated', 'date.js')
+	await saveCurrentDateToFile(outputDateFilePath)
 }
 
 updateLastSeen()
