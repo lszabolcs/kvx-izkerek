@@ -202,6 +202,11 @@ const columbia = [
 
 const costaRica = [
 	{
+		name: 'Costa Rica La Pastora Tarrazu',
+		roast: 'KS',
+		notes: ['barna-cukor', 'csokolade', 'alma', 'narancs']
+	},
+	{
 		name: 'Costa Rica Palmichal Micromill Honey Natural',
 		roast: 'KS',
 		notes: ['oszibarack', 'citrus'],
@@ -386,6 +391,12 @@ const mexico = [
 		roast: 'KV',
 		notes: ['csokolade', 'oszibarack', 'citrom'],
 		desc: 'Tejcsokoládé, Sárgabarack, Citrom'
+	},
+	{
+		name: 'Mexico SHG Organic EP Berilo Specialty-84p',
+		roast: 'KS',
+		notes: ['csokolade', 'diofelek', 'karamellizalt', 'edes', 'narancs', 'alma'],
+		desc: 'Csokis-diós, karamelles/cane sugar édességgel és narancs-almás savgerinccel.'
 	}
 ]
 
