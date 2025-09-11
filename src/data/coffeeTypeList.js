@@ -259,6 +259,12 @@ const etiopia = [
 		desc: 'Trópusi gyümölcsök, citrusfélék és virágos jegyek.'
 	},
 	{
+		name: 'Ethiopia Sidamo GR1 Shantawene washed',
+		roast: 'F',
+		notes: ['egyeb-gyumolcs', 'citrus', 'viragos'],
+		desc: 'Trópusi gyümölcsök, citrusfélék és virágos jegyek.'
+	},
+	{
 		name: 'Ethiopia washed Limu',
 		roast: 'V',
 		notes: ['gyumolcsos', 'viragos', 'narancs'],

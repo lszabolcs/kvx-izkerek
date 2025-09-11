@@ -18,6 +18,10 @@ const RoastDot = ({
 		V: {
 			color: '#cc9433',
 			label: 'Világos'
+		},
+		F: {
+			color: '#ccb72d',
+			label: 'Filter'
 		}
 	}
 

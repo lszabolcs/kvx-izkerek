@@ -6,6 +6,7 @@ const RoastDotList = () => (
 		<RoastDot level="KS" withLabel/>
 		<RoastDot level="KV" withLabel/>
 		<RoastDot level="V" withLabel/>
+		<RoastDot level="F" withLabel/>
 	</div>
 )
 
