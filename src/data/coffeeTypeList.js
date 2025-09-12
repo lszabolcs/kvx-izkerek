@@ -11,7 +11,7 @@ const avxBlend = [
 		desc: 'Étcsokoládé, pörkölt mogyoró és kakaó.'
 	},
 	{
-		name: 'AVX Choco & Orange Blend',
+		name: 'AVX Choco and Orange Blend',
 		roast: 'KV',
 		notes: ['etcsokolade', 'narancs']
 	},
