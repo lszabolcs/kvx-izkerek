@@ -1,3 +1,3 @@
 export default {
-  "lastUpdated": "2025-10-19T13:49:18.470Z"
+  "lastUpdated": "2025-10-23T12:01:42.480Z"
 };
