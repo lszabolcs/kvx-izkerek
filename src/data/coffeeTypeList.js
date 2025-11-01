@@ -357,6 +357,12 @@ const india = [
 
 const kenya = [
 	{
+		name: 'Kenya AA Jambo Jambo',
+		roast: 'V',
+		notes: ['bogyos-gyumolcs', 'citrus', 'fekete-tea'],
+		desc: 'Bogyók, citrusfélék és fekete tea. Lédús, selymes és pezsgő, élénk savassággal.'
+	},
+	{
 		name: 'Kenya AA Plus',
 		roast: 'V',
 		notes: ['citrom', 'egyeb-gyumolcs', 'afonya'],
@@ -366,10 +372,22 @@ const kenya = [
 
 const nicaragua = [
 	{
+		name: 'Nicaragua Mama Mina Red Pacamara Specialty-88p',
+		roast: 'KS',
+		notes: ['alma', 'oszibarack', 'fahej'],
+		desc: 'Piros almára, sárgabarackra és egy csipetnyi fahéjra emlékeztet'
+	},
+	{
 		name: 'Nicaragua Maragogype Laguna Verde Specialty-87p',
 		roast: 'KV',
 		notes: ['gyumolcsos', 'edes', 'alma'],
 		desc: 'Csonthéjas gyümölcsök, cukornád és alma ízek'
+	},
+	{
+		name: 'Nicaragua Natural Robusta',
+		roast: 'S',
+		notes: ['etcsokolade', 'dohos-foldes', 'diofelek', 'melasz', 'fekete-tea'],
+		desc: 'Étcsokoládé, földes jegyek, dió, melasz, fekete tea'
 	},
 	{
 		name: 'Nicaragua Red Pacamara El Limoncillo Specialty-88p',
