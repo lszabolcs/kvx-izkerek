@@ -73,6 +73,11 @@ const avxBlend = [
 		roast: 'S',
 		notes: ['etcsokolade', 'kakao'],
 	},
+		{
+		name: 'Nicaragua 7777 Limited Edition Blend',
+		roast: 'KS',
+		notes: ['csokolade']
+	}
 ]
 
 const brasil = [
