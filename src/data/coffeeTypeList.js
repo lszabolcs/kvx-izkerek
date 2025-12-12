@@ -270,6 +270,11 @@ const etiopia = [
 		desc: 'Trópusi gyümölcsök, citrusfélék és virágos jegyek.'
 	},
 	{
+		name: 'Ethiopia Natural Guji Buku Abel Gr1. Specialty',
+		roast: 'F',
+		notes: ['gyumolcsos', 'diofelek', 'afonya', 'mandula', 'csokolade']
+	},
+	{
 		name: 'Ethiopia washed Limu',
 		roast: 'V',
 		notes: ['gyumolcsos', 'viragos', 'narancs'],
