@@ -80,6 +80,16 @@ const avxBlend = [
 	}
 ]
 
+
+const bolivia  = [
+	{
+		name: 'Bolivia Caranavi Ayni Gr1 washed Bio',
+		roast: 'KV',
+		notes: ['csokolade', 'diofelek', 'citrus'],
+		desc: 'Finoman csokoládés és diós jegyek, karamellás édesség, enyhe citrusos savasság, tiszta, kiegyensúlyozott utóíz.'
+	}
+]
+
 const brasil = [
 	{
 		name: 'Brazil Bom Dia Signature',
@@ -166,6 +176,12 @@ const brasil = [
 		name: 'Brazil natural Obata Fazenda da Lagoa Specialty 84p',
 		roast: 'KS',
 		notes: ['etcsokolade', 'diofelek']
+	},
+	{
+		name: 'Brazil Maragogype Natural Specialty 87p',
+		roast: 'KV',
+		notes: ['citrus', 'grapefruit', 'viragos', 'mez', 'csokolade', 'karamellizalt'],
+		desc: 'Friss citrusos, élénk savasság (citrom, grapefruit jelleg), virágos aromák, mézes édesség (finom, lágy testtel), csokoládés, karamelles vagy gyümölcsös jegyek (területtől függően). Általános karakter: kiegyensúlyozott, elegáns, aromás és nem agresszív.'
 	},
 	{
 		name: 'Brazil Mogiana Scr 17/18 fine cup',
@@ -532,6 +548,7 @@ const rwanda = [
 const coffeeTypeList = [
 	...avxBlend,
 	...brasil,
+	...bolivia,
 	...columbia,
 	...costaRica,
 	...elSalvador,
