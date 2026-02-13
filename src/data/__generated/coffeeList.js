@@ -5,7 +5,7 @@ export default [
     "notes": [
       "csokolade"
     ],
-    "lastSeen": "2026-02-07T08:06:28.636Z"
+    "lastSeen": "2026-02-13T07:06:04.432Z"
   },
   {
     "name": "AVX Bronze",
@@ -16,7 +16,7 @@ export default [
       "kakao"
     ],
     "desc": "Étcsokoládé, pörkölt mogyoró és kakaó.",
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "Automata Blend 70/30",
@@ -25,7 +25,7 @@ export default [
       "kakao",
       "etcsokolade"
     ],
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "La Dolce Vita 80/20-as Blend",
@@ -34,7 +34,7 @@ export default [
       "etcsokolade",
       "kakao"
     ],
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "AVX Silver",
@@ -45,7 +45,7 @@ export default [
       "kakao",
       "narancs"
     ],
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "AVX Espresso",
@@ -56,7 +56,7 @@ export default [
       "kakao"
     ],
     "desc": "Étcsokoládé, vérnarancs és kakaó.",
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "AVX Gold",
@@ -66,7 +66,7 @@ export default [
       "csokolade",
       "gyumolcsos"
     ],
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "AVX 100% Arabica Blend",
@@ -74,7 +74,7 @@ export default [
     "notes": [
       "csokolade"
     ],
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "AVX India Malabar Blend",
@@ -83,7 +83,7 @@ export default [
       "fuszerek",
       "dohany"
     ],
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "Béla papa kedvence Blend",
@@ -94,7 +94,7 @@ export default [
       "ananasz",
       "eper"
     ],
-    "lastSeen": "2026-02-07T08:06:28.638Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "AVX Choco & Orange Blend",
@@ -123,7 +123,7 @@ export default [
       "mazsola",
       "karamellizalt"
     ],
-    "lastSeen": "2026-02-07T08:06:28.639Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "Brazil Carbonic Natural Koffeinmentes",
@@ -133,7 +133,7 @@ export default [
       "kakao",
       "mez"
     ],
-    "lastSeen": "2026-02-07T08:06:28.639Z"
+    "lastSeen": "2026-02-13T07:06:04.434Z"
   },
   {
     "name": "Brazil Fazenda Da Lagoa CO2 Footprint Natural Specialty 84p",
@@ -151,7 +151,7 @@ export default [
       "savanyu"
     ],
     "desc": "Ez a kávé édes, telt testű, enyhe savú és nagyon jól kiegyensúlyozott.",
-    "lastSeen": "2026-02-07T08:06:28.639Z"
+    "lastSeen": "2026-02-13T07:06:04.435Z"
   },
   {
     "name": "Brazil Fazenda do Lobo Mundo Novo Anaerobic Specialty 86p",
@@ -169,7 +169,7 @@ export default [
       "csokolade",
       "narancs"
     ],
-    "lastSeen": "2026-02-07T08:06:28.639Z"
+    "lastSeen": "2026-02-13T07:06:04.435Z"
   },
   {
     "name": "Brazil Fazenda Rainha Yellow Bourbon Specialty 86p",
@@ -199,7 +199,7 @@ export default [
       "kakao",
       "etcsokolade"
     ],
-    "lastSeen": "2026-02-07T08:06:28.640Z"
+    "lastSeen": "2026-02-13T07:06:04.435Z"
   },
   {
     "name": "Brazil Santos CO2 Koffeinmentes",
@@ -278,7 +278,7 @@ export default [
       "csokolade",
       "grapefruit"
     ],
-    "lastSeen": "2026-02-07T08:06:28.641Z"
+    "lastSeen": "2026-02-13T07:06:04.436Z"
   },
   {
     "name": "Costa Rica Palmichal Micromill Honey Natural",
@@ -308,7 +308,7 @@ export default [
       "csokolade",
       "diofelek"
     ],
-    "lastSeen": "2026-02-07T08:06:28.642Z"
+    "lastSeen": "2026-02-13T07:06:04.437Z"
   },
   {
     "name": "El Salvador Los Naranjos Valley Red Bourbon natural Specialty 87p",
@@ -326,7 +326,7 @@ export default [
       "citrom"
     ],
     "desc": "Citromos fekete teára hasonlít. Közepesen testes kávé.",
-    "lastSeen": "2026-02-07T08:06:28.642Z"
+    "lastSeen": "2026-02-13T07:06:04.437Z"
   },
   {
     "name": "Ethiopia Sidamo GR1 Shantawene Bombe natural",
@@ -370,7 +370,7 @@ export default [
       "narancs"
     ],
     "desc": "Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi narancsos savassággal és nugátos ízzel.",
-    "lastSeen": "2026-02-07T08:06:28.642Z"
+    "lastSeen": "2026-02-13T07:06:04.437Z"
   },
   {
     "name": "Ethiopia washed Yirgacheffe Kochere",
@@ -381,7 +381,7 @@ export default [
       "narancs"
     ],
     "desc": "Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi narancsos savassággal és nugátos ízzel.",
-    "lastSeen": "2026-02-07T08:06:28.642Z"
+    "lastSeen": "2026-02-13T07:06:04.437Z"
   },
   {
     "name": "Guatemala SHB EP Catuai Finca El Gigante Specialty 84p",
@@ -430,7 +430,7 @@ export default [
       "edes"
     ],
     "desc": "Tejcsokoládé, mogyoró, keksz. Édes, közepesen testes és alacsony savasság.",
-    "lastSeen": "2026-02-07T08:06:28.645Z"
+    "lastSeen": "2026-02-13T07:06:04.438Z"
   },
   {
     "name": "India Robusta Cherry AA",
@@ -449,7 +449,7 @@ export default [
       "fuszerek",
       "dohany"
     ],
-    "lastSeen": "2026-02-07T08:06:28.645Z"
+    "lastSeen": "2026-02-13T07:06:04.439Z"
   },
   {
     "name": "Kenya AA Plus",
@@ -460,7 +460,7 @@ export default [
       "afonya"
     ],
     "desc": "Érett citrom, kajszibarack és áfonya.",
-    "lastSeen": "2026-02-07T08:06:28.645Z"
+    "lastSeen": "2026-02-13T07:06:04.439Z"
   },
   {
     "name": "Nicaragua Maragogype Laguna Verde Specialty-87p",
@@ -492,7 +492,7 @@ export default [
       "citrom"
     ],
     "desc": "Tejcsokoládé, Sárgabarack, Citrom",
-    "lastSeen": "2026-02-07T08:06:28.646Z"
+    "lastSeen": "2026-02-13T07:06:04.439Z"
   },
   {
     "name": "Tanzania AA Utengule Estate Honey Specialty 86p",
@@ -624,7 +624,7 @@ export default [
       "csokolade",
       "gyumolcsos"
     ],
-    "lastSeen": "2026-01-18T11:02:33.241Z"
+    "lastSeen": "2026-02-13T07:06:04.441Z"
   },
   {
     "name": "AVX Jin-Jang Blend",
@@ -645,7 +645,7 @@ export default [
       "fekete-tea",
       "aszalt-gyumolcs"
     ],
-    "lastSeen": "2026-02-07T08:06:28.648Z"
+    "lastSeen": "2026-02-13T07:06:04.441Z"
   },
   {
     "name": "Nicaragua Red Pacamara El Limoncillo Specialty-88p",
@@ -656,7 +656,7 @@ export default [
       "narancs"
     ],
     "desc": "Passiógyümölcs ízei, rum, és narancshéj.",
-    "lastSeen": "2026-02-07T08:06:28.648Z"
+    "lastSeen": "2026-02-13T07:06:04.441Z"
   },
   {
     "name": "PNG Hai Tambu",
@@ -667,7 +667,7 @@ export default [
       "citrus"
     ],
     "desc": "Gyógynövények, fekete ribizli, mandarin",
-    "lastSeen": "2026-02-07T08:06:28.648Z"
+    "lastSeen": "2026-02-13T07:06:04.441Z"
   },
   {
     "name": "Rwanda Inagagi Specialty 85p",
@@ -697,7 +697,7 @@ export default [
       "csokolade"
     ],
     "desc": "Narancs, Tejcsokoládé, Keksz",
-    "lastSeen": "2026-02-07T08:06:28.649Z"
+    "lastSeen": "2026-02-13T07:06:04.442Z"
   },
   {
     "name": "Brazil Fazenda da Lagoa Specialty 84p",
@@ -706,7 +706,7 @@ export default [
       "etcsokolade",
       "diofelek"
     ],
-    "lastSeen": "2026-02-07T08:06:28.649Z"
+    "lastSeen": "2026-02-13T07:06:04.442Z"
   },
   {
     "name": "Brazil Fazenda Sertao Peaberry Natural Yellow Bourbon",
@@ -729,7 +729,7 @@ export default [
       "fekete-tea"
     ],
     "desc": "Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi őszibarak, fekete tea.",
-    "lastSeen": "2026-02-07T08:06:28.650Z"
+    "lastSeen": "2026-02-13T07:06:04.442Z"
   },
   {
     "name": "Honduras SHG EP Guara Roja Red Honey Specialty 84p",
@@ -740,7 +740,7 @@ export default [
       "savanyu"
     ],
     "desc": "Édes és élénk savasság, lédús ízvilágú kávé. Komplex aroma és különleges utóíz.",
-    "lastSeen": "2026-02-07T08:06:28.650Z"
+    "lastSeen": "2026-02-13T07:06:04.442Z"
   },
   {
     "name": "Nicaragua SHB EP Jinotega Matagalpa Specialty",
@@ -770,7 +770,7 @@ export default [
       "bogyos-gyumolcs"
     ],
     "desc": "Édes rebarbara , Sötét bogyós gyümölcsök",
-    "lastSeen": "2026-02-07T08:06:28.650Z"
+    "lastSeen": "2026-02-13T07:06:04.450Z"
   },
   {
     "name": "Costa Rica La Pastora Tarrazu",
@@ -781,7 +781,7 @@ export default [
       "alma",
       "narancs"
     ],
-    "lastSeen": "2026-02-07T08:06:28.650Z"
+    "lastSeen": "2026-02-13T07:06:04.450Z"
   },
   {
     "name": "Mexico SHG Organic EP Berilo Specialty-84p",
@@ -882,7 +882,7 @@ export default [
       "fekete-tea"
     ],
     "desc": "Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi őszibarak, fekete tea.",
-    "lastSeen": "2026-02-07T08:06:28.651Z"
+    "lastSeen": "2026-02-13T07:06:04.458Z"
   },
   {
     "name": "Brazil Maragogype Natural Specialty 87p",
@@ -896,7 +896,7 @@ export default [
       "karamellizalt"
     ],
     "desc": "Friss citrusos, élénk savasság (citrom, grapefruit jelleg), virágos aromák, mézes édesség (finom, lágy testtel), csokoládés, karamelles vagy gyümölcsös jegyek (területtől függően). Általános karakter: kiegyensúlyozott, elegáns, aromás és nem agresszív.",
-    "lastSeen": "2026-02-07T08:06:28.652Z"
+    "lastSeen": "2026-02-13T07:06:04.459Z"
   },
   {
     "name": "Bolivia Caranavi Ayni Gr1 washed Bio",
@@ -907,6 +907,6 @@ export default [
       "citrus"
     ],
     "desc": "Finoman csokoládés és diós jegyek, karamellás édesség, enyhe citrusos savasság, tiszta, kiegyensúlyozott utóíz.",
-    "lastSeen": "2026-02-07T08:06:28.652Z"
+    "lastSeen": "2026-02-13T07:06:04.459Z"
   }
 ];
