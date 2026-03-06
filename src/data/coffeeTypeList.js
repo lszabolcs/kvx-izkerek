@@ -73,10 +73,16 @@ const avxBlend = [
 		roast: 'S',
 		notes: ['etcsokolade', 'kakao'],
 	},
-		{
+	{
 		name: 'Nicaragua 7777 Limited Edition Blend',
 		roast: 'KS',
 		notes: ['csokolade']
+	},
+	{
+		name: 'Rio-Mumbai Arabica Blend',
+		roast: 'KS',
+		notes: ['csokolade', 'mogyoro', 'karamellizalt', 'fuszerek', 'citrus'],
+		desc: 'Csokoládé, mogyoró/nougat, karamell/toffee, háttérben enyhe fűszeresség, és néha egy finom citrusos/gyümölcsös felhang.'
 	}
 ]
 
@@ -295,6 +301,12 @@ const etiopia = [
 		name: 'Ethiopia Natural Guji Buku Abel Gr1. Specialty',
 		roast: 'F',
 		notes: ['gyumolcsos', 'diofelek', 'afonya', 'mandula', 'csokolade']
+	},
+	{
+		name: 'Ethiopia Natural Yirgacheffe Chelelektu',
+		roast: 'V',
+		notes: ['gyumolcsos', 'viragos', 'narancs'],
+		desc: 'Komplex, gyümölcsös. A florális ízjegyek dominálnak, némi narancsos savassággal és nugátos ízzel.'
 	},
 	{
 		name: 'Ethiopia washed Limu',
