@@ -221,6 +221,12 @@ const columbia = [
 		desc: 'Trópusi licsi'
 	},
 	{
+		name: 'Colombia Supremo Huila',
+		roast: 'KS',
+		notes: ['etcsokolade', 'karamellizalt', 'mogyoro', 'diofelek', 'bogyos-gyumolcs'],
+		desc: 'Étcsokoládé, édes karamell és pörkölt mogyoró/dió. Érett bogyós gyümölcsök, szilva, vörös alma, néha pedig citrusos.  Édes, gyakran kakaós vagy finoman fűszeres lecsengés.'
+	},
+	{
 		name: 'Colombia Supremo Sofia',
 		roast: 'KS',
 		notes: ['csokolade', 'grapefruit']
